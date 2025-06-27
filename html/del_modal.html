@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Time Tango</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Admindek Bootstrap admin template made using Bootstrap 5 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+    <meta name="author" content="colorlib" />
+    <!-- Favicon icon -->
+
+    <link rel="icon" href="Template/files/assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="Template/files/bower_components/bootstrap/css/bootstrap.min.css">
+    <!-- waves.css -->
+    <link rel="stylesheet" href="Template/files/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+    <!-- feather icon -->
+    <link rel="stylesheet" type="text/css" href="Template/files/assets/icon/feather/css/feather.css">
+    <!-- sweet alert framework -->
+    <link rel="stylesheet" type="text/css" href="Template/files/bower_components/sweetalert/css/sweetalert.css">
+    
+    <!-- jquery sortable js -->
+    <script type="text/javascript" src="Template/files/bower_components/Sortable/js/Sortable.js"></script>
+    
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="Template/files/assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="Template/files/assets/icon/icofont/css/icofont.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="Template/files/assets/icon/font-awesome/css/font-awesome.min.css">
+    <!-- animation nifty modal window effects css -->
+    <link rel="stylesheet" type="text/css" href="Template/files/assets/css/component.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="Template/files/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="Template/files/assets/css/pages.css">
+    <link rel="stylesheet" type="text/css" href="Template/files/assets/css/widget.css">
+    <link rel="stylesheet" type="text/css" href="timetango.css">
+
+</head>
+
+<body class="menu-bottom">
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+        <div class="loader-bar"></div>
+    </div>
+    <!-- [ Pre-loader ] end -->
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+            <!-- [ Header ] start -->
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+                    <div class="navbar-logo">
+                        <!-- <a href="index.html">
+                            <img class="img-fluid" src="Template/files/assets/images/logo.png" alt="Theme-Logo" />
+                        </a> -->
+                        <a class="text-white">
+                            Time Tango
+                        </a>
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="feather icon-menu icon-toggle-right"></i>
+                        </a>
+                        <a class="mobile-options waves-effect waves-light">
+                            <i class="feather icon-more-horizontal"></i>
+                        </a>
+                    </div>
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-left">
+                            <li class="header-search">
+                                <div class="main-search morphsearch-search">
+                                    <div class="input-group">
+                                        <span class="input-group-text search-close">
+                                            <i class="feather icon-x input-group-text"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Enter Keyword">
+                                        <span class="input-group-text search-btn">
+                                            <i class="feather icon-search input-group-text"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                                    <i class="full-screen feather icon-maximize"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="header-notification">
+                                <div class="dropdown-primary dropdown">
+                                    <div class="dropdown-toggle" data-bs-toggle="dropdown">
+                                        <i class="feather icon-bell"></i>
+                                        <span class="badge bg-c-red">5</span>
+                                    </div>
+                                    <ul class="show-notification notification-view dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                        <li>
+                                            <h6>Notifications</h6>
+                                            <label class="form-label label label-danger">New</label>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0">
+                                                    <img class="img-radius" src="Template/files/assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="notification-user">John Doe</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0">
+                                                    <img class="img-radius" src="Template/files/assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="notification-user">Joseph William</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0">
+                                                    <img class="img-radius" src="Template/files/assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="notification-user">Sara Soudein</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header-notification">
+                               <div class="dropdown-primary dropdown">
+                                   <div class="displayChatbox dropdown-toggle" data-bs-toggle="dropdown">
+                                       <i class="feather icon-message-square"></i>
+                                       <span class="badge bg-c-green">3</span>
+                                   </div>
+                               </div>
+                           </li>
+                           <li class="user-profile header-notification">
+
+                                <div class="dropdown-primary dropdown">
+                                    <div class="dropdown-toggle" data-bs-toggle="dropdown">
+                                        <img src="Template/files/assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                                        <span>John Doe</span>
+                                        <i class="feather icon-chevron-down"></i>
+                                    </div>
+                                    <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                        <li>
+                                            <a href="#!">
+                                                <i class="feather icon-settings"></i> Settings
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="feather icon-user"></i> Profile
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="email-inbox.html">
+                                                <i class="feather icon-mail"></i> My Messages
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="auth-lock-screen.html">
+                                                <i class="feather icon-lock"></i> Lock Screen
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="auth-sign-in-social.html">
+                                                <i class="feather icon-log-out"></i> Logout
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    <!-- [ navigation menu ] start -->
+                    <nav class="pcoded-navbar">
+
+                        <div class="nav-list">
+                            <div class="pcoded-inner-navbar main-menu">
+                                <div class="pcoded-navigation-label">Navigation</div>
+                                <ul class="pcoded-item pcoded-left-item">
+                                    <li class="pcoded-hasmenu">
+                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                                            <span class="pcoded-mtext">Dashboard</span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class="">
+                                                <a href="index.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Default</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="dashboard-crm.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">CRM</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="dashboard-analytics.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Analytics</span>
+                                                    <span class="pcoded-badge label label-info ">NEW</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu">
+                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
+                                            <span class="pcoded-mtext">Page layouts</span>
+                                            <span class="pcoded-badge label label-warning">NEW</span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" pcoded-hasmenu">
+                                                <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Vertical</span>
+                                                </a>
+                                                <ul class="pcoded-submenu">
+                                                    <li class="">
+                                                        <a href="menu-static.html" class="waves-effect waves-dark">
+                                                            <span class="pcoded-mtext">Static Layout</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="menu-header-fixed.html" class="waves-effect waves-dark">
+                                                            <span class="pcoded-mtext">Header Fixed</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="menu-compact.html" class="waves-effect waves-dark">
+                                                            <span class="pcoded-mtext">Compact</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="menu-sidebar.html" class="waves-effect waves-dark">
+                                                            <span class="pcoded-mtext">Sidebar Fixed</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class=" pcoded-hasmenu">
+                                                <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Horizontal</span>
+                                                </a>
+                                                <ul class="pcoded-submenu">
+                                                    <li class="">
+                                                        <a href="menu-horizontal-static.html" target="_blank" class="waves-effect waves-dark">
+                                                            <span class="pcoded-mtext">Static Layout</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="menu-horizontal-fixed.html" target="_blank" class="waves-effect waves-dark">
+                                                            <span class="pcoded-mtext">Fixed layout</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="menu-horizontal-icon.html" target="_blank" class="waves-effect waves-dark">
+                                                            <span class="pcoded-mtext">Static With Icon</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="menu-horizontal-icon-fixed.html" target="_blank" class="waves-effect waves-dark">
+                                                            <span class="pcoded-mtext">Fixed With Icon</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="">
+                                                <a href="menu-bottom.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Bottom Menu</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                        <a href="navbar-light.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon">
+                                                <i class="feather icon-menu"></i>
+                                            </span>
+                                            <span class="pcoded-mtext">Navigation</span>
+                                        </a>
+                                    </li>
+                                    <li class="pcoded-hasmenu">
+                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon">
+                                                <i class="feather icon-layers"></i>
+                                            </span>
+                                            <span class="pcoded-mtext">Widget</span>
+                                            <span class="pcoded-badge label label-danger">100+</span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class="">
+                                                <a href="widget-statistic.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Statistic</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="widget-data.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Data</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="widget-chart.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Chart Widget</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- [ navigation menu ] end -->
+                    <div class="pcoded-content">
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <!-- Page body start -->
+                                    <div class="page-body button-page position-relative flex-nowrap overflow-auto">
+                                        <div class="row">
+                                        <!--- neoneoneo -->
+                                            <div class="col-12  table-container">
+                                            </div>
+                                            <!-- MODAL 1-->
+                                            <div class="modal fade" id="large-Modal" tabindex="-1" role="dialog" >
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title">Information</h4>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <h5>Default Modal</h5>
+                                                            <p>This is Photoshop's version of Lorem IpThis is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default waves-effect " data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary waves-effect waves-light ">Save changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- MODAL 1 END -->
+                                        </div>
+                                    </div>
+                                    <!-- Page body end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main-body end -->
+                    <div id="styleSelector">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+<!--[if lt IE 10]>
+<div class="ie-warning">
+    <h1>Warning!!</h1>
+    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="Template/files/assets/images/browser/chrome.png" alt="Chrome">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="Template/files/assets/images/browser/firefox.png" alt="Firefox">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="Template/files/assets/images/browser/opera.png" alt="Opera">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="Template/files/assets/images/browser/safari.png" alt="Safari">
+                    <div>Safari</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                    <img src="Template/files/assets/images/browser/ie.png" alt="">
+                    <div>IE (9 & above)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+<!-- Warning Section Ends -->
+<!-- Required Jquery -->
+<script type="text/javascript" src="Template/files/bower_components/jquery/js/jquery.min.js"></script>
+<script type="text/javascript" src="Template/files/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="Template/files/bower_components/popper.js/js/popper.min.js"></script>
+<script type="text/javascript" src="Template/files/bower_components/bootstrap/js/bootstrap.min.js"></script>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js'></script> -->
+ <script type="text/javascript" src="jquery.ui.touch-punch.js"></script>
+<!-- waves js -->
+<script src="Template/files/assets/pages/waves/js/waves.min.js"></script>
+<!-- jquery slimscroll js -->
+<script type="text/javascript" src="Template/files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+<!-- modernizr js -->
+<script type="text/javascript" src="Template/files/bower_components/modernizr/js/modernizr.js"></script>
+<script type="text/javascript" src="Template/files/bower_components/modernizr/js/css-scrollbars.js"></script>
+<!-- sweet alert js -->
+<script type="text/javascript" src="Template/files/bower_components/sweetalert/js/sweetalert.min.js"></script>
+<script type="text/javascript" src="Template/files/assets/js/modal.js"></script>
+<!-- sweet alert modal.js intialize js -->
+
+<!-- modalEffects js nifty modal window effects -->
+<script src="Template/files/assets/js/classie.js"></script>
+<script type="text/javascript" src="Template/files/assets/js/modalEffects.js"></script>
+<script src="Template/files/assets/js/pcoded.js"></script>
+<script src="Template/files/assets/js/vertical/menu/menu-sidebar-fixed.js"></script>
+<!-- <script src="Template/files/assets/js/vertical/vertical-layout.js"></script> -->
+<script src="Template/files/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Custom js -->
+<script type="text/javascript" src="Template/files/assets/js/script.js"></script>
+<script type="text/javascript" src="Template/files/bower_components/moment/js/moment.min.js"></script>
+<script type="text/javascript" src="timetango.js"></script>
+</body>
+
+</html>

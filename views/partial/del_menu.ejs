@@ -1,0 +1,28 @@
+<% if (groupid==="Neo") { %>
+    <!-- Function neo  -->
+    <%- include('../groupid/'+groupid+'/menu'); %>
+
+<% } else if (groupid==="Owner") { %>
+    <!-- Function owner  -->
+    <%- include('menu/menu_owner'); %>
+
+<% } else if (groupid==="Shop") { %>
+    <!-- Function shop -->
+    <%- include('menu/menu_shop'); %>
+
+<% } else if (groupid==="Manager") { %>
+    <!-- Function shop -->
+    <%- include('menu/menu_manager'); %>
+    
+<% } else if (groupid==="Tech") { %>
+    <!-- Function shop -->
+    <%- include('menu/menu_tech'); %>
+
+<% } else if (groupid==="Customer") { %>
+    <!-- Function shop -->
+    <%- include('menu/menu_customer'); %>
+    
+<% } else { %>
+    <!-- Function default -->
+    <%- include('menu/menu_emp'); %>
+<% } %>

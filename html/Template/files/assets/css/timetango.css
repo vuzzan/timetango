@@ -1,0 +1,51 @@
+/* .calendar-time{
+    padding-top: 160px;
+}
+.calendar-time > li{
+    height: 40px;
+    font-size: 14px;
+    border-bottom: 1px solid #cecece;
+}
+
+.calendar-resource-verticle  >li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.calendar-resource >li{
+    font-size: 14px;
+
+}
+.calendar-resource-list{
+    padding-left: 200px;
+    color:burlywood;
+} */
+
+/* Table css */
+.table-container {
+    max-height: 1200px;
+    overflow-y: auto;
+    border: 0px solid #ccc;
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    z-index: 1000;
+}
+th, td {
+    /* padding: 10px; */
+    text-align: left;
+    border-bottom: 1px solid #cecece;
+}
+
+.cal-time{
+    height: 40px;
+    font-size: 14px;
+}

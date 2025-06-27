@@ -1,0 +1,56 @@
+<!-- Page body start -->
+                                    <div class="page-body button-page position-relative flex-nowrap overflow-auto">
+                                        <div class="row">
+                                        <!--- neoneoneo -->
+                                            <div class="col-12 table-container">
+                                            </div>
+                                            <!-- MODAL 1-->
+                                            <div class="modal fade" id="large-Modal" tabindex="-1" role="dialog" >
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title">Information</h4>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <h5>Default Modal</h5>
+                                                            <p>This is Photoshop's version of Lorem IpThis is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default waves-effect " data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary waves-effect waves-light ">Save changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- MODAL 1 END -->
+                                        </div>
+                                    </div>
+                                    <!-- Page body end -->
+
+<script>
+$(document).ready(function() {
+    console.log("START POS");
+    var token = localStorage.getItem('token');
+
+    $.ajax({
+        url: server_host + "api/mstData?dt="+DATE_STRING,
+        dataType: "json",
+        success: function (json) {
+            drawResources_table(json.resources, json.events);
+        },
+        headers: {
+            Authorization: `Bearer ${token}`,
+        },
+        error: function (xhr) {
+            const error = xhr.responseJSON ? xhr.responseJSON.message : 'Error';
+            if (xhr.status === 401) {
+                // Token không hợp lệ, yêu cầu đăng nhập lại
+                localStorage.removeItem('token');
+                window.location.href = '/login';
+            }
+        },
+    });
+    
+});
+</script>
