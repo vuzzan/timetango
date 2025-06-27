@@ -15,7 +15,6 @@ const app_title = "TIME TANGO";
 const app = express();
 
 app.use(express.json());
-app.use(requestLogger);
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -48,6 +47,7 @@ app.use('/api', masterRoutes);
 app.use('/api', userRoutes);
 app.use('/api', eventRoutes);
 app.use('/api', ownerRoutes);
+app.use(requestLogger);
 app.use(errorHandler);
 
 // Serve static files from the 'public' directory

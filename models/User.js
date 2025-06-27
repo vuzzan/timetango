@@ -68,7 +68,7 @@ User.beforeCreate(async (user) => {
 // Hook để băm password trước khi cập nhật (nếu password thay đổi)
 User.beforeUpdate(async (user) => {
   if (user.changed('password')) {
-    logger.info( "beforeUpdate password "+user.password);
+    //logger.info( "beforeUpdate password "+user.password);
     user.password = await bcrypt.hash(user.password, 10);
     logger.info( "   ---afterUpdate password "+user.password);
   }

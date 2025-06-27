@@ -9,12 +9,12 @@ $(document).ready(function () {
         const email = $('#user-name').val();
         const password = $('#password').val();
         const isRemember = $("#cbRemember").is(':checked');
-        if( email.length<=3 ){
+        if( email.length<=1 ){
             // LOGIN
             $('#message').text('Please input id...');
             return;
         }
-        if( password.length<=3 ){
+        if( password.length<=1 ){
             // LOGIN
             $('#message').text('Please input password...');
             return;

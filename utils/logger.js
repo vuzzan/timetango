@@ -8,7 +8,7 @@ const logFormat = printf(({ level, message, timestamp }) => {
 });
 
 const logger = createLogger({
-  level: 'info', // Mức log mặc định (info, error, warn, debug, ...)
+  level: 'info',
   format: combine(
     timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
     logFormat
@@ -17,11 +17,10 @@ const logger = createLogger({
     // Ghi log ra console
     new transports.Console({
       format: combine(
-        colorize(), // Thêm màu cho log trên console
+        colorize(),
         logFormat
       ),
     }),
-    // Ghi log vào file, xoay vòng theo ngày
     new transports.DailyRotateFile({
       filename: 'logs/%DATE%-app.log',
       datePattern: 'YYYY-MM-DD',

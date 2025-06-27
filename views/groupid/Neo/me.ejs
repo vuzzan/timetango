@@ -2,20 +2,161 @@
     <!-- Config. table start -->
     <div class="card">
         <div class="card-header">
-            <h5>My Shop List <%= groupid %>
-            </h5>
-            <span></span>
+            <h5>My Account Information</h5>
         </div>
         <div class="card-block">
-            <table id="table-data" class="table display">
-            </table>
+            <form id="idForm">
+                <input type="hidden" id="id" name="id">
+
+                <div class="row mb-3">
+                    <label class="form-label col-sm-2 col-form-label"></label>
+                    <div class="col-sm-10">
+                        <a href="#" onclick=""><img src="" id="image" class="img-80 img-radius"></a>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="form-label col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" maxlength=50 class="form-control form-control-round fill" id="name" name="name">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="form-label col-sm-2 col-form-label">LoginId</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="email" name="email" readonly class="form-control form-control-round fill" >
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="form-label col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" id="password1" name="password1" maxlength=12 class="form-control form-control-round fill">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="form-label col-sm-2 col-form-label">Confirm Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" id="password2" name="password2" maxlength=12 class="form-control form-control-round fill">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="form-label col-sm-2 col-form-label">Notes</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="notes" name="notes" class="form-control form-control-round fill">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-10">
+                        <button class="btn btn-lg btn-round waves-effect waves-light btn-danger">
+                            <i class="icofont icofont-eye-alt"></i>
+                            Delete
+                        </button>
+                        <button class="btn btn-lg btn-round waves-effect waves-light btn-success">
+                            <i class="icofont icofont-delete"></i>
+                            Cancel
+                        </button>
+                        <button onclick="return update()" class="btn btn-lg btn-round waves-effect waves-light btn-primary">
+                            <i class="icofont icofont-check-circled"></i>
+                            Update
+                        </button>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+        </div>
+
+        <div class="modal fade" id="small-Modal" tabindex="-1" style="z-index: 1050; display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary">
+                        <h4 class="modal-title">Modal title</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Error check</h5>
+                        <p></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-lg btn-warning btn-round waves-effect" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Config. table end -->
 </div>
 
 <script>
-$(document).ready(function() {
-    console.log("START ME");
-});
+    $(document).ready(function () {
+        //console.log("Call queryAjax 0");
+        //
+        queryAjax(
+            {   url: "api/me",
+                type: "get",
+                contentType: "application/json; charset=utf-8",
+            }, 
+            function(json){
+                for (var [key, value] of Object.entries(json.user)) {
+                    //console.log( "set #"+key+" ="+value)
+                    if( key=="image"){
+                        if( value.length==0 ){
+                            value = "/Template/files/assets/images/avatar-"+(parseInt(json.user.id) % 9)+".jpg";
+                        }
+                        //console.log( "set #"+key+" ="+idd)
+                        $("#"+key).attr("src", value);
+                    }
+                    else{
+                        $("#"+key).val(value);
+                    }
+                }
+            }
+        );
+    });
+
+    function checkValid(){
+        var checkError = "";
+        //console.log( $("#password1").val() );
+        //console.log( $("#password2").val() );
+        if( $("#password1").val()!==$("#password2").val()){
+            checkError += "Password & Confirm must matching" ;
+        }
+        //console.log( checkError );
+        return checkError;
+    }
+
+    function serializeForm($form){
+        return _.object(_.map($form.serializeArray(), function(item){return [item.name, item.value]; }));
+    }
+
+    function update(){
+        var msg = checkValid();
+        //console.log( msg );
+        if( msg.length>0 ){
+            $("#small-Modal").find(".modal-body").find("p").html(msg);
+            $("#small-Modal").modal("show");
+            return false;
+        }
+
+        //===========================
+        var data = jQFormSerializeArrToJson($("#idForm").serializeArray());
+        console.log( data );
+        queryAjax(
+            {   
+                url: "api/me",
+                type: 'post',
+                dataType: "json",
+                dataJson: data,
+                contentType: "application/json; charset=utf-8",
+                traditional: true,
+            }, 
+            function(json){
+                console.log(json);
+            }
+        );
+        //===========================
+        return false;
+    }
 </script>

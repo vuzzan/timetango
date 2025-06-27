@@ -6,16 +6,70 @@ const bcrypt = require('bcrypt');
 const { generateToken } = require('../utils/jwt');
 const logger = require('../utils/logger');
 const actionlog = require('../utils/actionLog');
+const { Sequelize, DataTypes, QueryTypes } = require('sequelize');
+const sequelize = require('../config/database');
+
 
 exports.getMe = async (req, res) => {
   const user = req.user;
-
   try {
-    res.json(
-      {
-        "user": user
-      });
-  } catch (err) {
+    console.log("GET ME: " + req.method);
+    if( req.method==="GET"){
+      res.json(
+        {
+          "user": user
+        });
+    }
+    else if( req.method==="POST"){
+      // Update user
+      console.log(req.ip);
+      let data = req.body;
+      console.log(data);
+      let password = "";
+      if( data.password1===data.password2){
+        password = data.password1;
+      }
+      console.log(`password='${password}', ` );
+      // var sql = "update users set "+
+      //   "name='"+data.name+"', "+
+      //   "notes='"+data.notes+"', "+
+      //   (password.length>0?`password='${password}', `:"")+
+      //   "updatedAt=CURRENT_TIMESTAMP() "+
+      //   " where id='"+data.id+"'";
+      // var listEvent = await sequelize.query(sql, {
+      //     type: QueryTypes.UPDATE,
+      // });
+      // console.log(sql );
+
+      const user = await User.findOne({ where: { id: data.id } });
+      if (!user) {
+        logger.warn(`User with email ${email} not found`);
+      }
+
+      // Cập nhật mật khẩu (hook beforeUpdate sẽ tự băm)
+      if( password.length>0 ){
+        console.log("Update with password...");
+        await user.update({
+          name: data.name,
+          notes: data.notes,
+          password: password 
+        });
+      }
+      else{
+        console.log("NO update password...");
+        await user.update({
+          name: data.name,
+          notes: data.notes,
+        });
+      }
+
+      res.json(
+        {
+          "user": await User.findByPk(data.id)
+        });
+    }
+  } 
+  catch (err) {
     res.status(200).json({ error: err.message });
   }
 };

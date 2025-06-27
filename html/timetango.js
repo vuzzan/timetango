@@ -41,25 +41,30 @@ $(document).ready(function() {
       window.location.href = '/login';
       return;
     }
-
-    $.ajax({
-        url: server_host + "api/me",
-        dataType: "json",
-        success: function (json) {
+    queryAjax({
+        url: "api/me",
+        dataType: "json"
+    },function (json) {
             drawUserProfile(json.user);
-        },
-        headers: {
-            Authorization: `Bearer ${token}`,
-        },
-        error: function (xhr) {
-            const error = xhr.responseJSON ? xhr.responseJSON.message : 'Error';
-            if (xhr.status === 401) {
-                // Token không hợp lệ, yêu cầu đăng nhập lại
-                localStorage.removeItem('token');
-                window.location.href = '/login';
-            }
-        },
     });
+    // $.ajax({
+    //     url: server_host + "api/me",
+    //     dataType: "json",
+    //     success: function (json) {
+    //         drawUserProfile(json.user);
+    //     },
+    //     headers: {
+    //         Authorization: `Bearer ${token}`,
+    //     },
+    //     error: function (xhr) {
+    //         const error = xhr.responseJSON ? xhr.responseJSON.message : 'Error';
+    //         if (xhr.status === 401) {
+    //             // Token không hợp lệ, yêu cầu đăng nhập lại
+    //             localStorage.removeItem('token');
+    //             window.location.href = '/login';
+    //         }
+    //     },
+    // });
 
     
 });
@@ -588,4 +593,39 @@ function logout(){
     window.location.href = '/login';
 }
 
+function jQFormSerializeArrToJson(formSerializeArr){
+ var jsonObj = {};
+ jQuery.map( formSerializeArr, function( n, i ) {
+     jsonObj[n.name] = n.value;
+ });
+
+ return jsonObj;
+}
+function queryAjax(ax, successFunc){
+    //console.log("Call queryAjax");
+    console.log( ax );
+    console.log("Call queryAjax");
+    $.ajax({
+        url: server_host + ax.url,
+        type: ax.type?ax.type:"get",
+        dataType: ax.dataType?ax.dataType:"json",
+        data: ax.dataJson? JSON.stringify(ax.dataJson):'{}',
+        contentType: ax.contentType?ax.contentType:"application/json; charset=utf-8",
+        traditional: ax.traditional?ax.traditional:true,
+        success: function (json) {
+            successFunc(json);
+        },
+        headers: {
+            Authorization: "Bearer "+ localStorage.getItem('token'),
+        },
+        error: function (xhr) {
+            const error = xhr.responseJSON ? xhr.responseJSON.message : 'Error';
+            if (xhr.status === 401) {
+                localStorage.removeItem('token');
+                window.location.href = '/login';
+            }
+        },
+        
+    });
+}
 // 
