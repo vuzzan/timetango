@@ -1,0 +1,9 @@
+option confirm off
+cd /home/timetango/timetango
+put G:\workspace_nodejs\timetango\views /home/timetango/timetango/views
+put G:\workspace_nodejs\timetango\utils /home/timetango/timetango/utils
+put G:\workspace_nodejs\timetango\routes /home/timetango/timetango/routes
+put G:\workspace_nodejs\timetango\controllers /home/timetango/timetango/controllers
+put G:\workspace_nodejs\timetango\middleware /home/timetango/timetango/middleware
+put G:\workspace_nodejs\timetango\models /home/timetango/timetango/models
+exit

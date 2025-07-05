@@ -1,0 +1,1562 @@
+. 2025-07-05 09:49:28.549 --------------------------------------------------------------------------
+. 2025-07-05 09:49:28.549 WinSCP Version 6.3.6 (Build 15073 2024-11-25) (OS 10.0.19045 – Windows 10 Enterprise)
+. 2025-07-05 09:49:28.549 Configuration: HKCU\Software\Martin Prikryl\WinSCP 2\
+. 2025-07-05 09:49:28.549 Log level: Normal
+. 2025-07-05 09:49:28.549 Local account: NEO6\Neo
+. 2025-07-05 09:49:28.550 Working directory: G:\workspace_nodejs\timetango
+. 2025-07-05 09:49:28.550 Process ID: 10288
+. 2025-07-05 09:49:28.574 Ancestor processes: WinSCP, powershell, Code, Code, explorer, ...
+. 2025-07-05 09:49:28.574 Command-line: "D:\winscp\winscp.exe" /console=6.3.6 /consoleinstance=_27240_801 "root@103.15.222.110_LANIC" "/script=sync.txt" "/log=sync.log" 
+. 2025-07-05 09:49:28.578 Time zone: Current: GMT+7 (SE Asia Standard Time), No DST
+. 2025-07-05 09:49:28.578 Login time: Saturday, July 5, 2025 9:49:28 AM
+. 2025-07-05 09:49:28.578 --------------------------------------------------------------------------
+. 2025-07-05 09:49:28.578 Script: Retrospectively logging previous script records:
+< 2025-07-05 09:49:28.578 Script: Opening session using command-line parameter in scripting is deprecated. Use 'open' command instead.
+< 2025-07-05 09:49:28.578 Script: In scripting you should not rely on saved sites, use this command instead:
+< 2025-07-05 09:49:28.579 Script: open sftp://root:***@103.15.222.110/ -hostkey="ssh-rsa 3072 n59RpatkT+bA5J2H7/ZfEEmEVDdxFpTn1GAW/TKx/pg"
+. 2025-07-05 09:49:28.579 --------------------------------------------------------------------------
+. 2025-07-05 09:49:28.579 Session name: root@103.15.222.110_LANIC (Site)
+. 2025-07-05 09:49:28.579 Host name: 103.15.222.110 (Port: 22)
+. 2025-07-05 09:49:28.579 User name: root (Password: Yes, Key file: No, Passphrase: No)
+. 2025-07-05 09:49:28.579 Tunnel: No
+. 2025-07-05 09:49:28.579 Transfer Protocol: SFTP (SCP)
+. 2025-07-05 09:49:28.579 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2025-07-05 09:49:28.579 Disable Nagle: No
+. 2025-07-05 09:49:28.579 Proxy: None
+. 2025-07-05 09:49:28.579 Send buffer: 262144
+. 2025-07-05 09:49:28.579 Compression: No
+. 2025-07-05 09:49:28.579 Bypass authentication: No
+. 2025-07-05 09:49:28.579 Try agent: Yes; Agent forwarding: No; KI: Yes; GSSAPI: Yes
+. 2025-07-05 09:49:28.579 GSSAPI: KEX: No; Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2025-07-05 09:49:28.579 Ciphers: aes,chacha20,aesgcm,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2025-07-05 09:49:28.579 KEX: ntru-curve25519,ecdh,dh-gex-sha1,dh-group18-sha512,dh-group17-sha512,dh-group16-sha512,dh-group15-sha512,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2025-07-05 09:49:28.579 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2025-07-05 09:49:28.579 Simple channel: Yes
+. 2025-07-05 09:49:28.579 Return code variable: Autodetect; Lookup user groups: Auto
+. 2025-07-05 09:49:28.579 Shell: default
+. 2025-07-05 09:49:28.579 EOL: LF, UTF: Auto
+. 2025-07-05 09:49:28.579 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2025-07-05 09:49:28.579 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2025-07-05 09:49:28.579 SFTP Bugs: Auto,Auto
+. 2025-07-05 09:49:28.579 SFTP Server: default
+. 2025-07-05 09:49:28.579 Local directory: G:\workspace_nodejs\timetango, Remote directory: /home/timetango/timetango, Update: Yes, Cache: Yes
+. 2025-07-05 09:49:28.579 Cache directory changes: Yes, Permanent: Yes
+. 2025-07-05 09:49:28.579 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2025-07-05 09:49:28.579 DST mode: Unix
+. 2025-07-05 09:49:28.579 --------------------------------------------------------------------------
+< 2025-07-05 09:49:28.579 Script: Searching for host...
+. 2025-07-05 09:49:28.580 Looking up host "103.15.222.110" for SSH connection
+. 2025-07-05 09:49:28.581 Connecting to 103.15.222.110 port 22
+. 2025-07-05 09:49:28.601 Connected to 103.15.222.110
+< 2025-07-05 09:49:28.601 Script: Connecting to host...
+. 2025-07-05 09:49:28.602 We claim version: SSH-2.0-WinSCP_release_6.3.6
+. 2025-07-05 09:49:28.602 Connected to 103.15.222.110
+. 2025-07-05 09:49:28.635 Remote version: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4
+. 2025-07-05 09:49:28.635 Using SSH protocol version 2
+. 2025-07-05 09:49:28.637 Have a known host key of type rsa2
+. 2025-07-05 09:49:28.660 Doing ECDH key exchange with curve Curve25519, using hash SHA-256
+. 2025-07-05 09:49:28.768 Host key fingerprint is:
+. 2025-07-05 09:49:28.768 ssh-rsa 3072 SHA256:n59RpatkT+bA5J2H7/ZfEEmEVDdxFpTn1GAW/TKx/pg
+< 2025-07-05 09:49:28.769 Script: Authenticating...
+. 2025-07-05 09:49:28.769 Host key matches cached key
+. 2025-07-05 09:49:28.770 Initialised AES-256 SDCTR (AES-NI accelerated) [aes256-ctr] outbound encryption
+. 2025-07-05 09:49:28.770 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2025-07-05 09:49:28.770 Initialised AES-256 SDCTR (AES-NI accelerated) [aes256-ctr] inbound encryption
+. 2025-07-05 09:49:28.770 Initialised HMAC-SHA-256 inbound MAC algorithm
+! 2025-07-05 09:49:28.791 Using username "root".
+< 2025-07-05 09:49:28.791 Script: Using username "root".
+. 2025-07-05 09:49:28.816 Server offered these authentication methods: publickey,password
+. 2025-07-05 09:49:28.816 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2025-07-05 09:49:28.816 Using stored password.
+< 2025-07-05 09:49:28.816 Script: Authenticating with pre-entered password.
+. 2025-07-05 09:49:28.817 Sent password
+. 2025-07-05 09:49:28.841 Access granted
+. 2025-07-05 09:49:28.842 Opening main session channel
+. 2025-07-05 09:49:29.522 Opened main channel
+. 2025-07-05 09:49:29.540 Started a shell/command
+< 2025-07-05 09:49:29.540 Script: Authenticated.
+. 2025-07-05 09:49:29.541 --------------------------------------------------------------------------
+. 2025-07-05 09:49:29.541 Using SFTP protocol.
+. 2025-07-05 09:49:29.541 Doing startup conversation with host.
+< 2025-07-05 09:49:29.541 Script: Starting the session...
+> 2025-07-05 09:49:29.541 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2025-07-05 09:49:29.560 Type: SSH_FXP_VERSION, Size: 179, Number: -1
+. 2025-07-05 09:49:29.561 SFTP version 3 negotiated.
+. 2025-07-05 09:49:29.561 Supports extension posix-rename@openssh.com="1"
+. 2025-07-05 09:49:29.561 Supports statvfs@openssh.com extension version 2
+. 2025-07-05 09:49:29.561 Unknown server extension fstatvfs@openssh.com="2"
+. 2025-07-05 09:49:29.561 Supports hardlink@openssh.com extension version 1
+. 2025-07-05 09:49:29.561 Unknown server extension fsync@openssh.com="1"
+. 2025-07-05 09:49:29.561 Unknown server extension lsetstat@openssh.com="1"
+. 2025-07-05 09:49:29.561 We believe the server has signed timestamps bug
+. 2025-07-05 09:49:29.561 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2025-07-05 09:49:29.561 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2025-07-05 09:49:29.561 Changing directory to "/home/timetango/timetango".
+. 2025-07-05 09:49:29.561 Getting real path for '/home/timetango/timetango'
+> 2025-07-05 09:49:29.561 Type: SSH_FXP_REALPATH, Size: 34, Number: 16
+< 2025-07-05 09:49:29.581 Type: SSH_FXP_NAME, Size: 71, Number: 16
+. 2025-07-05 09:49:29.582 Real path is '/home/timetango/timetango'
+. 2025-07-05 09:49:29.582 Trying to open directory "/home/timetango/timetango".
+> 2025-07-05 09:49:29.582 Type: SSH_FXP_LSTAT, Size: 34, Number: 263
+< 2025-07-05 09:49:29.603 Type: SSH_FXP_ATTRS, Size: 37, Number: 263
+. 2025-07-05 09:49:29.603 Getting current directory name.
+. 2025-07-05 09:49:29.603 Startup conversation with host finished.
+< 2025-07-05 09:49:29.603 Script: Session started.
+< 2025-07-05 09:49:29.604 Script: Active session: [1] root@103.15.222.110_LANIC
+> 2025-07-05 09:49:29.604 Script: option confirm off
+< 2025-07-05 09:49:29.604 Script: confirm         off       
+> 2025-07-05 09:49:29.605 Script: cd /home/timetango/timetango
+. 2025-07-05 09:49:29.605 Cached directory change via "/home/timetango/timetango" to "/home/timetango/timetango".
+. 2025-07-05 09:49:29.605 Getting current directory name.
+< 2025-07-05 09:49:29.605 Script: /home/timetango/timetango
+> 2025-07-05 09:49:29.605 Script: put G:\workspace_nodejs\timetango\views /home/timetango/timetango/views
+. 2025-07-05 09:49:29.606 Copying 1 files/directories to remote directory "/home/timetango/timetango/"
+. 2025-07-05 09:49:29.606   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: views
+. 2025-07-05 09:49:29.606   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2025-07-05 09:49:29.606   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2025-07-05 09:49:29.606 File: 'G:\workspace_nodejs\timetango\views' [2025-06-26T10:27:15.604Z] [0]
+. 2025-07-05 09:49:29.606 Listing file "/home/timetango/timetango/views".
+> 2025-07-05 09:49:29.606 Type: SSH_FXP_LSTAT, Size: 40, Number: 519
+< 2025-07-05 09:49:29.626 Type: SSH_FXP_ATTRS, Size: 37, Number: 519
+. 2025-07-05 09:49:29.626 views;D;0;2025-07-05T02:42:16.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:29.627 File: 'G:\workspace_nodejs\timetango\views\del_owner.ejs' [2025-06-26T10:21:10.478Z] [9986]
+. 2025-07-05 09:49:29.627 Copying "G:\workspace_nodejs\timetango\views\del_owner.ejs" to remote directory started.
+. 2025-07-05 09:49:29.627 Binary transfer mode selected.
+. 2025-07-05 09:49:29.627 Opening remote file.
+> 2025-07-05 09:49:29.627 Type: SSH_FXP_OPEN, Size: 70, Number: 771
+< 2025-07-05 09:49:29.648 Type: SSH_FXP_HANDLE, Size: 13, Number: 771
+> 2025-07-05 09:49:29.648 Type: SSH_FXP_WRITE, Size: 10011, Number: 1286
+> 2025-07-05 09:49:29.650 Type: SSH_FXP_CLOSE, Size: 13, Number: 1540
+> 2025-07-05 09:49:29.650 Type: SSH_FXP_SETSTAT, Size: 66, Number: 1033
+< 2025-07-05 09:49:29.674 Type: SSH_FXP_STATUS, Size: 24, Number: 1286
+< 2025-07-05 09:49:29.674 Status code: 0
+< 2025-07-05 09:49:29.674 Type: SSH_FXP_STATUS, Size: 24, Number: 1540
+< 2025-07-05 09:49:29.674 Status code: 0
+. 2025-07-05 09:49:29.674 Preserving timestamp [2025-06-26T10:21:10.000Z]
+< 2025-07-05 09:49:29.694 Type: SSH_FXP_STATUS, Size: 24, Number: 1033
+< 2025-07-05 09:49:29.694 Status code: 0
+. 2025-07-05 09:49:29.694 Transfer done: 'G:\workspace_nodejs\timetango\views\del_owner.ejs' => '/home/timetango/timetango/views/del_owner.ejs' [9986]
+. 2025-07-05 09:49:29.695 File: 'G:\workspace_nodejs\timetango\views\groupid' [2025-07-03T08:40:43.763Z] [0]
+. 2025-07-05 09:49:29.696 Listing file "/home/timetango/timetango/views/groupid".
+> 2025-07-05 09:49:29.696 Type: SSH_FXP_LSTAT, Size: 48, Number: 1799
+< 2025-07-05 09:49:29.719 Type: SSH_FXP_ATTRS, Size: 37, Number: 1799
+. 2025-07-05 09:49:29.719 groupid;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:29.720 File: 'G:\workspace_nodejs\timetango\views\groupid\default' [2025-06-27T08:24:09.281Z] [0]
+. 2025-07-05 09:49:29.720 Listing file "/home/timetango/timetango/views/groupid/default".
+> 2025-07-05 09:49:29.720 Type: SSH_FXP_LSTAT, Size: 56, Number: 2055
+< 2025-07-05 09:49:29.742 Type: SSH_FXP_ATTRS, Size: 37, Number: 2055
+. 2025-07-05 09:49:29.742 default;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:29.742 File: 'G:\workspace_nodejs\timetango\views\groupid\default\me.ejs' [2025-06-26T10:54:17.278Z] [496]
+. 2025-07-05 09:49:29.743 Copying "G:\workspace_nodejs\timetango\views\groupid\default\me.ejs" to remote directory started.
+. 2025-07-05 09:49:29.743 Binary transfer mode selected.
+. 2025-07-05 09:49:29.743 Opening remote file.
+> 2025-07-05 09:49:29.743 Type: SSH_FXP_OPEN, Size: 79, Number: 2307
+< 2025-07-05 09:49:29.763 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2025-07-05 09:49:29.763 Type: SSH_FXP_WRITE, Size: 521, Number: 2822
+> 2025-07-05 09:49:29.764 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+> 2025-07-05 09:49:29.764 Type: SSH_FXP_SETSTAT, Size: 75, Number: 2569
+< 2025-07-05 09:49:29.784 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2025-07-05 09:49:29.784 Status code: 0
+< 2025-07-05 09:49:29.785 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2025-07-05 09:49:29.785 Status code: 0
+. 2025-07-05 09:49:29.785 Preserving timestamp [2025-06-26T10:54:17.000Z]
+< 2025-07-05 09:49:29.804 Type: SSH_FXP_STATUS, Size: 24, Number: 2569
+< 2025-07-05 09:49:29.804 Status code: 0
+. 2025-07-05 09:49:29.804 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\default\me.ejs' => '/home/timetango/timetango/views/groupid/default/me.ejs' [496]
+. 2025-07-05 09:49:29.804 File: 'G:\workspace_nodejs\timetango\views\groupid\default\menu.ejs' [2025-06-26T10:14:55.131Z] [414]
+. 2025-07-05 09:49:29.805 Copying "G:\workspace_nodejs\timetango\views\groupid\default\menu.ejs" to remote directory started.
+. 2025-07-05 09:49:29.805 Binary transfer mode selected.
+. 2025-07-05 09:49:29.805 Opening remote file.
+> 2025-07-05 09:49:29.805 Type: SSH_FXP_OPEN, Size: 81, Number: 3331
+< 2025-07-05 09:49:29.827 Type: SSH_FXP_HANDLE, Size: 13, Number: 3331
+> 2025-07-05 09:49:29.827 Type: SSH_FXP_WRITE, Size: 439, Number: 3846
+> 2025-07-05 09:49:29.838 Type: SSH_FXP_CLOSE, Size: 13, Number: 4100
+> 2025-07-05 09:49:29.838 Type: SSH_FXP_SETSTAT, Size: 77, Number: 3593
+< 2025-07-05 09:49:29.858 Type: SSH_FXP_STATUS, Size: 24, Number: 3846
+< 2025-07-05 09:49:29.858 Status code: 0
+< 2025-07-05 09:49:29.858 Type: SSH_FXP_STATUS, Size: 24, Number: 4100
+< 2025-07-05 09:49:29.858 Status code: 0
+. 2025-07-05 09:49:29.859 Preserving timestamp [2025-06-26T10:14:55.000Z]
+< 2025-07-05 09:49:29.889 Type: SSH_FXP_STATUS, Size: 24, Number: 3593
+< 2025-07-05 09:49:29.889 Status code: 0
+. 2025-07-05 09:49:29.889 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\default\menu.ejs' => '/home/timetango/timetango/views/groupid/default/menu.ejs' [414]
+. 2025-07-05 09:49:29.889 File: 'G:\workspace_nodejs\timetango\views\groupid\Neo' [2025-06-28T02:08:49.942Z] [0]
+. 2025-07-05 09:49:29.889 Listing file "/home/timetango/timetango/views/groupid/Neo".
+> 2025-07-05 09:49:29.889 Type: SSH_FXP_LSTAT, Size: 52, Number: 4359
+< 2025-07-05 09:49:29.908 Type: SSH_FXP_ATTRS, Size: 37, Number: 4359
+. 2025-07-05 09:49:29.909 Neo;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:29.909 File: 'G:\workspace_nodejs\timetango\views\groupid\Neo\list_owners.ejs' [2025-07-05T01:50:29.610Z] [15866]
+. 2025-07-05 09:49:29.909 Copying "G:\workspace_nodejs\timetango\views\groupid\Neo\list_owners.ejs" to remote directory started.
+. 2025-07-05 09:49:29.909 Binary transfer mode selected.
+. 2025-07-05 09:49:29.909 Opening remote file.
+> 2025-07-05 09:49:29.909 Type: SSH_FXP_OPEN, Size: 84, Number: 4611
+< 2025-07-05 09:49:29.930 Type: SSH_FXP_HANDLE, Size: 13, Number: 4611
+> 2025-07-05 09:49:29.930 Type: SSH_FXP_WRITE, Size: 15891, Number: 5126
+> 2025-07-05 09:49:29.930 Type: SSH_FXP_CLOSE, Size: 13, Number: 5380
+> 2025-07-05 09:49:29.930 Type: SSH_FXP_SETSTAT, Size: 80, Number: 4873
+< 2025-07-05 09:49:29.951 Type: SSH_FXP_STATUS, Size: 24, Number: 5126
+< 2025-07-05 09:49:29.951 Status code: 0
+< 2025-07-05 09:49:29.951 Type: SSH_FXP_STATUS, Size: 24, Number: 5380
+< 2025-07-05 09:49:29.951 Status code: 0
+. 2025-07-05 09:49:29.951 Preserving timestamp [2025-07-05T01:50:29.000Z]
+< 2025-07-05 09:49:29.976 Type: SSH_FXP_STATUS, Size: 24, Number: 4873
+< 2025-07-05 09:49:29.976 Status code: 0
+. 2025-07-05 09:49:29.976 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Neo\list_owners.ejs' => '/home/timetango/timetango/views/groupid/Neo/list_owners.ejs' [15866]
+. 2025-07-05 09:49:29.976 File: 'G:\workspace_nodejs\timetango\views\groupid\Neo\me.ejs' [2025-07-04T02:22:19.205Z] [8044]
+. 2025-07-05 09:49:29.976 Copying "G:\workspace_nodejs\timetango\views\groupid\Neo\me.ejs" to remote directory started.
+. 2025-07-05 09:49:29.976 Binary transfer mode selected.
+. 2025-07-05 09:49:29.976 Opening remote file.
+> 2025-07-05 09:49:29.976 Type: SSH_FXP_OPEN, Size: 75, Number: 5635
+< 2025-07-05 09:49:29.996 Type: SSH_FXP_HANDLE, Size: 13, Number: 5635
+> 2025-07-05 09:49:29.996 Type: SSH_FXP_WRITE, Size: 8069, Number: 6150
+> 2025-07-05 09:49:29.996 Type: SSH_FXP_CLOSE, Size: 13, Number: 6404
+> 2025-07-05 09:49:29.996 Type: SSH_FXP_SETSTAT, Size: 71, Number: 5897
+< 2025-07-05 09:49:30.014 Type: SSH_FXP_STATUS, Size: 24, Number: 6150
+< 2025-07-05 09:49:30.014 Status code: 0
+< 2025-07-05 09:49:30.015 Type: SSH_FXP_STATUS, Size: 24, Number: 6404
+< 2025-07-05 09:49:30.015 Status code: 0
+. 2025-07-05 09:49:30.015 Preserving timestamp [2025-07-04T02:22:19.000Z]
+< 2025-07-05 09:49:30.033 Type: SSH_FXP_STATUS, Size: 24, Number: 5897
+< 2025-07-05 09:49:30.033 Status code: 0
+. 2025-07-05 09:49:30.033 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Neo\me.ejs' => '/home/timetango/timetango/views/groupid/Neo/me.ejs' [8044]
+. 2025-07-05 09:49:30.033 File: 'G:\workspace_nodejs\timetango\views\groupid\Neo\menu.ejs' [2025-06-28T02:07:02.912Z] [707]
+. 2025-07-05 09:49:30.034 Copying "G:\workspace_nodejs\timetango\views\groupid\Neo\menu.ejs" to remote directory started.
+. 2025-07-05 09:49:30.034 Binary transfer mode selected.
+. 2025-07-05 09:49:30.034 Opening remote file.
+> 2025-07-05 09:49:30.034 Type: SSH_FXP_OPEN, Size: 77, Number: 6659
+< 2025-07-05 09:49:30.052 Type: SSH_FXP_HANDLE, Size: 13, Number: 6659
+> 2025-07-05 09:49:30.052 Type: SSH_FXP_WRITE, Size: 732, Number: 7174
+> 2025-07-05 09:49:30.053 Type: SSH_FXP_CLOSE, Size: 13, Number: 7428
+> 2025-07-05 09:49:30.053 Type: SSH_FXP_SETSTAT, Size: 73, Number: 6921
+< 2025-07-05 09:49:30.072 Type: SSH_FXP_STATUS, Size: 24, Number: 7174
+< 2025-07-05 09:49:30.072 Status code: 0
+< 2025-07-05 09:49:30.072 Type: SSH_FXP_STATUS, Size: 24, Number: 7428
+< 2025-07-05 09:49:30.072 Status code: 0
+. 2025-07-05 09:49:30.072 Preserving timestamp [2025-06-28T02:07:02.000Z]
+< 2025-07-05 09:49:30.095 Type: SSH_FXP_STATUS, Size: 24, Number: 6921
+< 2025-07-05 09:49:30.095 Status code: 0
+. 2025-07-05 09:49:30.095 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Neo\menu.ejs' => '/home/timetango/timetango/views/groupid/Neo/menu.ejs' [707]
+. 2025-07-05 09:49:30.095 File: 'G:\workspace_nodejs\timetango\views\groupid\Owner' [2025-07-04T06:17:01.451Z] [0]
+. 2025-07-05 09:49:30.096 Listing file "/home/timetango/timetango/views/groupid/Owner".
+> 2025-07-05 09:49:30.096 Type: SSH_FXP_LSTAT, Size: 54, Number: 7687
+< 2025-07-05 09:49:30.114 Type: SSH_FXP_ATTRS, Size: 37, Number: 7687
+. 2025-07-05 09:49:30.114 Owner;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:30.114 File: 'G:\workspace_nodejs\timetango\views\groupid\Owner\list_customers.ejs' [2025-07-04T06:43:14.607Z] [18791]
+. 2025-07-05 09:49:30.114 Copying "G:\workspace_nodejs\timetango\views\groupid\Owner\list_customers.ejs" to remote directory started.
+. 2025-07-05 09:49:30.115 Binary transfer mode selected.
+. 2025-07-05 09:49:30.115 Opening remote file.
+> 2025-07-05 09:49:30.115 Type: SSH_FXP_OPEN, Size: 89, Number: 7939
+< 2025-07-05 09:49:30.134 Type: SSH_FXP_HANDLE, Size: 13, Number: 7939
+> 2025-07-05 09:49:30.134 Type: SSH_FXP_WRITE, Size: 18816, Number: 8454
+> 2025-07-05 09:49:30.136 Type: SSH_FXP_CLOSE, Size: 13, Number: 8708
+> 2025-07-05 09:49:30.136 Type: SSH_FXP_SETSTAT, Size: 85, Number: 8201
+< 2025-07-05 09:49:30.158 Type: SSH_FXP_STATUS, Size: 24, Number: 8454
+< 2025-07-05 09:49:30.158 Status code: 0
+< 2025-07-05 09:49:30.158 Type: SSH_FXP_STATUS, Size: 24, Number: 8708
+< 2025-07-05 09:49:30.158 Status code: 0
+. 2025-07-05 09:49:30.159 Preserving timestamp [2025-07-04T06:43:14.000Z]
+< 2025-07-05 09:49:30.175 Type: SSH_FXP_STATUS, Size: 24, Number: 8201
+< 2025-07-05 09:49:30.175 Status code: 0
+. 2025-07-05 09:49:30.175 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Owner\list_customers.ejs' => '/home/timetango/timetango/views/groupid/Owner/list_customers.ejs' [18791]
+. 2025-07-05 09:49:30.175 File: 'G:\workspace_nodejs\timetango\views\groupid\Owner\list_shop.ejs' [2025-07-04T06:43:36.269Z] [16372]
+. 2025-07-05 09:49:30.176 Copying "G:\workspace_nodejs\timetango\views\groupid\Owner\list_shop.ejs" to remote directory started.
+. 2025-07-05 09:49:30.176 Binary transfer mode selected.
+. 2025-07-05 09:49:30.176 Opening remote file.
+> 2025-07-05 09:49:30.176 Type: SSH_FXP_OPEN, Size: 84, Number: 8963
+< 2025-07-05 09:49:30.194 Type: SSH_FXP_HANDLE, Size: 13, Number: 8963
+> 2025-07-05 09:49:30.194 Type: SSH_FXP_WRITE, Size: 16397, Number: 9478
+> 2025-07-05 09:49:30.195 Type: SSH_FXP_CLOSE, Size: 13, Number: 9732
+> 2025-07-05 09:49:30.195 Type: SSH_FXP_SETSTAT, Size: 80, Number: 9225
+< 2025-07-05 09:49:30.216 Type: SSH_FXP_STATUS, Size: 24, Number: 9478
+< 2025-07-05 09:49:30.216 Status code: 0
+< 2025-07-05 09:49:30.216 Type: SSH_FXP_STATUS, Size: 24, Number: 9732
+< 2025-07-05 09:49:30.216 Status code: 0
+. 2025-07-05 09:49:30.216 Preserving timestamp [2025-07-04T06:43:36.000Z]
+< 2025-07-05 09:49:30.234 Type: SSH_FXP_STATUS, Size: 24, Number: 9225
+< 2025-07-05 09:49:30.234 Status code: 0
+. 2025-07-05 09:49:30.234 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Owner\list_shop.ejs' => '/home/timetango/timetango/views/groupid/Owner/list_shop.ejs' [16372]
+. 2025-07-05 09:49:30.234 File: 'G:\workspace_nodejs\timetango\views\groupid\Owner\list_users.ejs' [2025-07-04T06:43:46.037Z] [19810]
+. 2025-07-05 09:49:30.235 Copying "G:\workspace_nodejs\timetango\views\groupid\Owner\list_users.ejs" to remote directory started.
+. 2025-07-05 09:49:30.235 Binary transfer mode selected.
+. 2025-07-05 09:49:30.235 Opening remote file.
+> 2025-07-05 09:49:30.235 Type: SSH_FXP_OPEN, Size: 85, Number: 9987
+< 2025-07-05 09:49:30.255 Type: SSH_FXP_HANDLE, Size: 13, Number: 9987
+> 2025-07-05 09:49:30.255 Type: SSH_FXP_WRITE, Size: 19835, Number: 10502
+> 2025-07-05 09:49:30.255 Type: SSH_FXP_CLOSE, Size: 13, Number: 10756
+> 2025-07-05 09:49:30.255 Type: SSH_FXP_SETSTAT, Size: 81, Number: 10249
+< 2025-07-05 09:49:30.277 Type: SSH_FXP_STATUS, Size: 24, Number: 10502
+< 2025-07-05 09:49:30.277 Status code: 0
+< 2025-07-05 09:49:30.277 Type: SSH_FXP_STATUS, Size: 24, Number: 10756
+< 2025-07-05 09:49:30.277 Status code: 0
+. 2025-07-05 09:49:30.277 Preserving timestamp [2025-07-04T06:43:46.000Z]
+< 2025-07-05 09:49:30.294 Type: SSH_FXP_STATUS, Size: 24, Number: 10249
+< 2025-07-05 09:49:30.294 Status code: 0
+. 2025-07-05 09:49:30.294 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Owner\list_users.ejs' => '/home/timetango/timetango/views/groupid/Owner/list_users.ejs' [19810]
+. 2025-07-05 09:49:30.294 File: 'G:\workspace_nodejs\timetango\views\groupid\Owner\me.ejs' [2025-07-04T02:22:44.763Z] [8044]
+. 2025-07-05 09:49:30.295 Copying "G:\workspace_nodejs\timetango\views\groupid\Owner\me.ejs" to remote directory started.
+. 2025-07-05 09:49:30.295 Binary transfer mode selected.
+. 2025-07-05 09:49:30.295 Opening remote file.
+> 2025-07-05 09:49:30.295 Type: SSH_FXP_OPEN, Size: 77, Number: 11011
+< 2025-07-05 09:49:30.314 Type: SSH_FXP_HANDLE, Size: 13, Number: 11011
+> 2025-07-05 09:49:30.314 Type: SSH_FXP_WRITE, Size: 8069, Number: 11526
+> 2025-07-05 09:49:30.316 Type: SSH_FXP_CLOSE, Size: 13, Number: 11780
+> 2025-07-05 09:49:30.316 Type: SSH_FXP_SETSTAT, Size: 73, Number: 11273
+< 2025-07-05 09:49:30.335 Type: SSH_FXP_STATUS, Size: 24, Number: 11526
+< 2025-07-05 09:49:30.335 Status code: 0
+< 2025-07-05 09:49:30.335 Type: SSH_FXP_STATUS, Size: 24, Number: 11780
+< 2025-07-05 09:49:30.335 Status code: 0
+. 2025-07-05 09:49:30.335 Preserving timestamp [2025-07-04T02:22:44.000Z]
+< 2025-07-05 09:49:30.354 Type: SSH_FXP_STATUS, Size: 24, Number: 11273
+< 2025-07-05 09:49:30.354 Status code: 0
+. 2025-07-05 09:49:30.355 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Owner\me.ejs' => '/home/timetango/timetango/views/groupid/Owner/me.ejs' [8044]
+. 2025-07-05 09:49:30.355 File: 'G:\workspace_nodejs\timetango\views\groupid\Owner\menu.ejs' [2025-07-04T06:18:01.542Z] [1310]
+. 2025-07-05 09:49:30.355 Copying "G:\workspace_nodejs\timetango\views\groupid\Owner\menu.ejs" to remote directory started.
+. 2025-07-05 09:49:30.355 Binary transfer mode selected.
+. 2025-07-05 09:49:30.355 Opening remote file.
+> 2025-07-05 09:49:30.355 Type: SSH_FXP_OPEN, Size: 79, Number: 12035
+< 2025-07-05 09:49:30.375 Type: SSH_FXP_HANDLE, Size: 13, Number: 12035
+> 2025-07-05 09:49:30.375 Type: SSH_FXP_WRITE, Size: 1335, Number: 12550
+> 2025-07-05 09:49:30.375 Type: SSH_FXP_CLOSE, Size: 13, Number: 12804
+> 2025-07-05 09:49:30.375 Type: SSH_FXP_SETSTAT, Size: 75, Number: 12297
+< 2025-07-05 09:49:30.396 Type: SSH_FXP_STATUS, Size: 24, Number: 12550
+< 2025-07-05 09:49:30.396 Status code: 0
+< 2025-07-05 09:49:30.396 Type: SSH_FXP_STATUS, Size: 24, Number: 12804
+< 2025-07-05 09:49:30.396 Status code: 0
+. 2025-07-05 09:49:30.396 Preserving timestamp [2025-07-04T06:18:01.000Z]
+< 2025-07-05 09:49:30.413 Type: SSH_FXP_STATUS, Size: 24, Number: 12297
+< 2025-07-05 09:49:30.413 Status code: 0
+. 2025-07-05 09:49:30.413 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Owner\menu.ejs' => '/home/timetango/timetango/views/groupid/Owner/menu.ejs' [1310]
+. 2025-07-05 09:49:30.413 File: 'G:\workspace_nodejs\timetango\views\groupid\Shop' [2025-06-26T10:18:31.433Z] [0]
+. 2025-07-05 09:49:30.413 Listing file "/home/timetango/timetango/views/groupid/Shop".
+> 2025-07-05 09:49:30.413 Type: SSH_FXP_LSTAT, Size: 53, Number: 13063
+< 2025-07-05 09:49:30.433 Type: SSH_FXP_ATTRS, Size: 37, Number: 13063
+. 2025-07-05 09:49:30.433 Shop;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:30.433 File: 'G:\workspace_nodejs\timetango\views\groupid\Tech' [2025-06-26T10:22:51.957Z] [0]
+. 2025-07-05 09:49:30.434 Listing file "/home/timetango/timetango/views/groupid/Tech".
+> 2025-07-05 09:49:30.434 Type: SSH_FXP_LSTAT, Size: 53, Number: 13319
+< 2025-07-05 09:49:30.454 Type: SSH_FXP_ATTRS, Size: 37, Number: 13319
+. 2025-07-05 09:49:30.455 Tech;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:30.455 File: 'G:\workspace_nodejs\timetango\views\groupid\Tech\menu.ejs' [2025-06-25T11:23:00.671Z] [6326]
+. 2025-07-05 09:49:30.455 Copying "G:\workspace_nodejs\timetango\views\groupid\Tech\menu.ejs" to remote directory started.
+. 2025-07-05 09:49:30.455 Binary transfer mode selected.
+. 2025-07-05 09:49:30.455 Opening remote file.
+> 2025-07-05 09:49:30.455 Type: SSH_FXP_OPEN, Size: 78, Number: 13571
+< 2025-07-05 09:49:30.474 Type: SSH_FXP_HANDLE, Size: 13, Number: 13571
+> 2025-07-05 09:49:30.474 Type: SSH_FXP_WRITE, Size: 6351, Number: 14086
+> 2025-07-05 09:49:30.476 Type: SSH_FXP_CLOSE, Size: 13, Number: 14340
+> 2025-07-05 09:49:30.476 Type: SSH_FXP_SETSTAT, Size: 74, Number: 13833
+< 2025-07-05 09:49:30.496 Type: SSH_FXP_STATUS, Size: 24, Number: 14086
+< 2025-07-05 09:49:30.496 Status code: 0
+< 2025-07-05 09:49:30.497 Type: SSH_FXP_STATUS, Size: 24, Number: 14340
+< 2025-07-05 09:49:30.497 Status code: 0
+. 2025-07-05 09:49:30.497 Preserving timestamp [2025-06-25T11:23:00.000Z]
+< 2025-07-05 09:49:30.513 Type: SSH_FXP_STATUS, Size: 24, Number: 13833
+< 2025-07-05 09:49:30.513 Status code: 0
+. 2025-07-05 09:49:30.513 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Tech\menu.ejs' => '/home/timetango/timetango/views/groupid/Tech/menu.ejs' [6326]
+. 2025-07-05 09:49:30.513 File: 'G:\workspace_nodejs\timetango\views\groupid\Tech\pos.ejs' [2025-06-26T10:55:20.603Z] [3344]
+. 2025-07-05 09:49:30.514 Copying "G:\workspace_nodejs\timetango\views\groupid\Tech\pos.ejs" to remote directory started.
+. 2025-07-05 09:49:30.514 Binary transfer mode selected.
+. 2025-07-05 09:49:30.514 Opening remote file.
+> 2025-07-05 09:49:30.514 Type: SSH_FXP_OPEN, Size: 77, Number: 14595
+< 2025-07-05 09:49:30.533 Type: SSH_FXP_HANDLE, Size: 13, Number: 14595
+> 2025-07-05 09:49:30.534 Type: SSH_FXP_WRITE, Size: 3369, Number: 15110
+> 2025-07-05 09:49:30.534 Type: SSH_FXP_CLOSE, Size: 13, Number: 15364
+> 2025-07-05 09:49:30.534 Type: SSH_FXP_SETSTAT, Size: 73, Number: 14857
+< 2025-07-05 09:49:30.557 Type: SSH_FXP_STATUS, Size: 24, Number: 15110
+< 2025-07-05 09:49:30.557 Status code: 0
+< 2025-07-05 09:49:30.557 Type: SSH_FXP_STATUS, Size: 24, Number: 15364
+< 2025-07-05 09:49:30.557 Status code: 0
+. 2025-07-05 09:49:30.558 Preserving timestamp [2025-06-26T10:55:20.000Z]
+< 2025-07-05 09:49:30.575 Type: SSH_FXP_STATUS, Size: 24, Number: 14857
+< 2025-07-05 09:49:30.575 Status code: 0
+. 2025-07-05 09:49:30.575 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Tech\pos.ejs' => '/home/timetango/timetango/views/groupid/Tech/pos.ejs' [3344]
+. 2025-07-05 09:49:30.575 File: 'G:\workspace_nodejs\timetango\views\index.ejs' [2025-06-30T10:04:23.804Z] [10109]
+. 2025-07-05 09:49:30.575 Copying "G:\workspace_nodejs\timetango\views\index.ejs" to remote directory started.
+. 2025-07-05 09:49:30.575 Binary transfer mode selected.
+. 2025-07-05 09:49:30.575 Opening remote file.
+> 2025-07-05 09:49:30.575 Type: SSH_FXP_OPEN, Size: 66, Number: 15619
+< 2025-07-05 09:49:30.596 Type: SSH_FXP_HANDLE, Size: 13, Number: 15619
+> 2025-07-05 09:49:30.596 Type: SSH_FXP_WRITE, Size: 10134, Number: 16134
+> 2025-07-05 09:49:30.597 Type: SSH_FXP_CLOSE, Size: 13, Number: 16388
+> 2025-07-05 09:49:30.597 Type: SSH_FXP_SETSTAT, Size: 62, Number: 15881
+< 2025-07-05 09:49:30.620 Type: SSH_FXP_STATUS, Size: 24, Number: 16134
+< 2025-07-05 09:49:30.620 Status code: 0
+< 2025-07-05 09:49:30.620 Type: SSH_FXP_STATUS, Size: 24, Number: 16388
+< 2025-07-05 09:49:30.621 Status code: 0
+. 2025-07-05 09:49:30.621 Preserving timestamp [2025-06-30T10:04:23.000Z]
+< 2025-07-05 09:49:30.640 Type: SSH_FXP_STATUS, Size: 24, Number: 15881
+< 2025-07-05 09:49:30.640 Status code: 0
+. 2025-07-05 09:49:30.640 Transfer done: 'G:\workspace_nodejs\timetango\views\index.ejs' => '/home/timetango/timetango/views/index.ejs' [10109]
+. 2025-07-05 09:49:30.640 File: 'G:\workspace_nodejs\timetango\views\login.ejs' [2025-06-26T00:28:48.186Z] [11741]
+. 2025-07-05 09:49:30.640 Copying "G:\workspace_nodejs\timetango\views\login.ejs" to remote directory started.
+. 2025-07-05 09:49:30.640 Binary transfer mode selected.
+. 2025-07-05 09:49:30.640 Opening remote file.
+> 2025-07-05 09:49:30.640 Type: SSH_FXP_OPEN, Size: 66, Number: 16643
+< 2025-07-05 09:49:30.661 Type: SSH_FXP_HANDLE, Size: 13, Number: 16643
+> 2025-07-05 09:49:30.661 Type: SSH_FXP_WRITE, Size: 11766, Number: 17158
+> 2025-07-05 09:49:30.662 Type: SSH_FXP_CLOSE, Size: 13, Number: 17412
+> 2025-07-05 09:49:30.662 Type: SSH_FXP_SETSTAT, Size: 62, Number: 16905
+< 2025-07-05 09:49:30.681 Type: SSH_FXP_STATUS, Size: 24, Number: 17158
+< 2025-07-05 09:49:30.682 Status code: 0
+< 2025-07-05 09:49:30.682 Type: SSH_FXP_STATUS, Size: 24, Number: 17412
+< 2025-07-05 09:49:30.682 Status code: 0
+. 2025-07-05 09:49:30.682 Preserving timestamp [2025-06-26T00:28:48.000Z]
+< 2025-07-05 09:49:30.698 Type: SSH_FXP_STATUS, Size: 24, Number: 16905
+< 2025-07-05 09:49:30.698 Status code: 0
+. 2025-07-05 09:49:30.698 Transfer done: 'G:\workspace_nodejs\timetango\views\login.ejs' => '/home/timetango/timetango/views/login.ejs' [11741]
+. 2025-07-05 09:49:30.698 File: 'G:\workspace_nodejs\timetango\views\partial' [2025-06-26T10:27:07.506Z] [0]
+. 2025-07-05 09:49:30.699 Listing file "/home/timetango/timetango/views/partial".
+> 2025-07-05 09:49:30.699 Type: SSH_FXP_LSTAT, Size: 48, Number: 17671
+< 2025-07-05 09:49:30.721 Type: SSH_FXP_ATTRS, Size: 37, Number: 17671
+. 2025-07-05 09:49:30.721 partial;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:30.721 File: 'G:\workspace_nodejs\timetango\views\partial\del_menu.ejs' [2025-06-26T10:26:43.307Z] [765]
+. 2025-07-05 09:49:30.721 Copying "G:\workspace_nodejs\timetango\views\partial\del_menu.ejs" to remote directory started.
+. 2025-07-05 09:49:30.721 Binary transfer mode selected.
+. 2025-07-05 09:49:30.721 Opening remote file.
+> 2025-07-05 09:49:30.721 Type: SSH_FXP_OPEN, Size: 77, Number: 17923
+< 2025-07-05 09:49:30.741 Type: SSH_FXP_HANDLE, Size: 13, Number: 17923
+> 2025-07-05 09:49:30.742 Type: SSH_FXP_WRITE, Size: 790, Number: 18438
+> 2025-07-05 09:49:30.742 Type: SSH_FXP_CLOSE, Size: 13, Number: 18692
+> 2025-07-05 09:49:30.742 Type: SSH_FXP_SETSTAT, Size: 73, Number: 18185
+< 2025-07-05 09:49:30.762 Type: SSH_FXP_STATUS, Size: 24, Number: 18438
+< 2025-07-05 09:49:30.762 Status code: 0
+< 2025-07-05 09:49:30.763 Type: SSH_FXP_STATUS, Size: 24, Number: 18692
+< 2025-07-05 09:49:30.763 Status code: 0
+. 2025-07-05 09:49:30.763 Preserving timestamp [2025-06-26T10:26:43.000Z]
+< 2025-07-05 09:49:30.782 Type: SSH_FXP_STATUS, Size: 24, Number: 18185
+< 2025-07-05 09:49:30.783 Status code: 0
+. 2025-07-05 09:49:30.783 Transfer done: 'G:\workspace_nodejs\timetango\views\partial\del_menu.ejs' => '/home/timetango/timetango/views/partial/del_menu.ejs' [765]
+. 2025-07-05 09:49:30.783 File: 'G:\workspace_nodejs\timetango\views\partial\logo.ejs' [2025-06-26T04:04:47.370Z] [443]
+. 2025-07-05 09:49:30.783 Copying "G:\workspace_nodejs\timetango\views\partial\logo.ejs" to remote directory started.
+. 2025-07-05 09:49:30.783 Binary transfer mode selected.
+. 2025-07-05 09:49:30.783 Opening remote file.
+> 2025-07-05 09:49:30.783 Type: SSH_FXP_OPEN, Size: 73, Number: 18947
+< 2025-07-05 09:49:30.803 Type: SSH_FXP_HANDLE, Size: 13, Number: 18947
+> 2025-07-05 09:49:30.804 Type: SSH_FXP_WRITE, Size: 468, Number: 19462
+> 2025-07-05 09:49:30.804 Type: SSH_FXP_CLOSE, Size: 13, Number: 19716
+> 2025-07-05 09:49:30.804 Type: SSH_FXP_SETSTAT, Size: 69, Number: 19209
+< 2025-07-05 09:49:30.824 Type: SSH_FXP_STATUS, Size: 24, Number: 19462
+< 2025-07-05 09:49:30.825 Status code: 0
+< 2025-07-05 09:49:30.825 Type: SSH_FXP_STATUS, Size: 24, Number: 19716
+< 2025-07-05 09:49:30.825 Status code: 0
+. 2025-07-05 09:49:30.825 Preserving timestamp [2025-06-26T04:04:47.000Z]
+< 2025-07-05 09:49:30.845 Type: SSH_FXP_STATUS, Size: 24, Number: 19209
+< 2025-07-05 09:49:30.845 Status code: 0
+. 2025-07-05 09:49:30.845 Transfer done: 'G:\workspace_nodejs\timetango\views\partial\logo.ejs' => '/home/timetango/timetango/views/partial/logo.ejs' [443]
+. 2025-07-05 09:49:30.845 File: 'G:\workspace_nodejs\timetango\views\partial\profiles.ejs' [2025-06-25T11:07:47.423Z] [777]
+. 2025-07-05 09:49:30.846 Copying "G:\workspace_nodejs\timetango\views\partial\profiles.ejs" to remote directory started.
+. 2025-07-05 09:49:30.846 Binary transfer mode selected.
+. 2025-07-05 09:49:30.846 Opening remote file.
+> 2025-07-05 09:49:30.846 Type: SSH_FXP_OPEN, Size: 77, Number: 19971
+< 2025-07-05 09:49:30.865 Type: SSH_FXP_HANDLE, Size: 13, Number: 19971
+> 2025-07-05 09:49:30.865 Type: SSH_FXP_WRITE, Size: 802, Number: 20486
+> 2025-07-05 09:49:30.866 Type: SSH_FXP_CLOSE, Size: 13, Number: 20740
+> 2025-07-05 09:49:30.866 Type: SSH_FXP_SETSTAT, Size: 73, Number: 20233
+< 2025-07-05 09:49:30.886 Type: SSH_FXP_STATUS, Size: 24, Number: 20486
+< 2025-07-05 09:49:30.886 Status code: 0
+< 2025-07-05 09:49:30.887 Type: SSH_FXP_STATUS, Size: 24, Number: 20740
+< 2025-07-05 09:49:30.887 Status code: 0
+. 2025-07-05 09:49:30.887 Preserving timestamp [2025-06-25T11:07:47.000Z]
+< 2025-07-05 09:49:30.907 Type: SSH_FXP_STATUS, Size: 24, Number: 20233
+< 2025-07-05 09:49:30.907 Status code: 0
+. 2025-07-05 09:49:30.908 Transfer done: 'G:\workspace_nodejs\timetango\views\partial\profiles.ejs' => '/home/timetango/timetango/views/partial/profiles.ejs' [777]
+. 2025-07-05 09:49:30.908 File: 'G:\workspace_nodejs\timetango\views\partial\search.ejs' [2025-06-26T04:04:28.814Z] [693]
+. 2025-07-05 09:49:30.908 Copying "G:\workspace_nodejs\timetango\views\partial\search.ejs" to remote directory started.
+. 2025-07-05 09:49:30.908 Binary transfer mode selected.
+. 2025-07-05 09:49:30.908 Opening remote file.
+> 2025-07-05 09:49:30.908 Type: SSH_FXP_OPEN, Size: 75, Number: 20995
+< 2025-07-05 09:49:30.928 Type: SSH_FXP_HANDLE, Size: 13, Number: 20995
+> 2025-07-05 09:49:30.928 Type: SSH_FXP_WRITE, Size: 718, Number: 21510
+> 2025-07-05 09:49:30.929 Type: SSH_FXP_CLOSE, Size: 13, Number: 21764
+> 2025-07-05 09:49:30.929 Type: SSH_FXP_SETSTAT, Size: 71, Number: 21257
+< 2025-07-05 09:49:30.949 Type: SSH_FXP_STATUS, Size: 24, Number: 21510
+< 2025-07-05 09:49:30.949 Status code: 0
+< 2025-07-05 09:49:30.949 Type: SSH_FXP_STATUS, Size: 24, Number: 21764
+< 2025-07-05 09:49:30.949 Status code: 0
+. 2025-07-05 09:49:30.950 Preserving timestamp [2025-06-26T04:04:28.000Z]
+< 2025-07-05 09:49:30.967 Type: SSH_FXP_STATUS, Size: 24, Number: 21257
+< 2025-07-05 09:49:30.967 Status code: 0
+. 2025-07-05 09:49:30.967 Transfer done: 'G:\workspace_nodejs\timetango\views\partial\search.ejs' => '/home/timetango/timetango/views/partial/search.ejs' [693]
+. 2025-07-05 09:49:30.967 Copying finished: Transferred: 134,038, Elapsed: 0:00:01, CPS: 98,484/s
+> 2025-07-05 09:49:30.968 Script: put G:\workspace_nodejs\timetango\utils /home/timetango/timetango/utils
+. 2025-07-05 09:49:30.968 Copying 1 files/directories to remote directory "/home/timetango/timetango/"
+. 2025-07-05 09:49:30.968   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: utils
+. 2025-07-05 09:49:30.968   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2025-07-05 09:49:30.968   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2025-07-05 09:49:30.968 File: 'G:\workspace_nodejs\timetango\utils' [2025-06-25T06:56:09.351Z] [0]
+. 2025-07-05 09:49:30.969 Listing file "/home/timetango/timetango/utils".
+> 2025-07-05 09:49:30.969 Type: SSH_FXP_LSTAT, Size: 40, Number: 22023
+< 2025-07-05 09:49:30.987 Type: SSH_FXP_ATTRS, Size: 37, Number: 22023
+. 2025-07-05 09:49:30.987 utils;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:30.987 File: 'G:\workspace_nodejs\timetango\utils\actionLog.js' [2025-07-03T08:19:28.532Z] [1165]
+. 2025-07-05 09:49:30.988 Copying "G:\workspace_nodejs\timetango\utils\actionLog.js" to remote directory started.
+. 2025-07-05 09:49:30.988 Binary transfer mode selected.
+. 2025-07-05 09:49:30.988 Opening remote file.
+> 2025-07-05 09:49:30.988 Type: SSH_FXP_OPEN, Size: 69, Number: 22275
+< 2025-07-05 09:49:31.008 Type: SSH_FXP_HANDLE, Size: 13, Number: 22275
+> 2025-07-05 09:49:31.008 Type: SSH_FXP_WRITE, Size: 1190, Number: 22790
+> 2025-07-05 09:49:31.009 Type: SSH_FXP_CLOSE, Size: 13, Number: 23044
+> 2025-07-05 09:49:31.009 Type: SSH_FXP_SETSTAT, Size: 65, Number: 22537
+< 2025-07-05 09:49:31.029 Type: SSH_FXP_STATUS, Size: 24, Number: 22790
+< 2025-07-05 09:49:31.029 Status code: 0
+< 2025-07-05 09:49:31.029 Type: SSH_FXP_STATUS, Size: 24, Number: 23044
+< 2025-07-05 09:49:31.029 Status code: 0
+. 2025-07-05 09:49:31.029 Preserving timestamp [2025-07-03T08:19:28.000Z]
+< 2025-07-05 09:49:31.047 Type: SSH_FXP_STATUS, Size: 24, Number: 22537
+< 2025-07-05 09:49:31.047 Status code: 0
+. 2025-07-05 09:49:31.047 Transfer done: 'G:\workspace_nodejs\timetango\utils\actionLog.js' => '/home/timetango/timetango/utils/actionLog.js' [1165]
+. 2025-07-05 09:49:31.047 File: 'G:\workspace_nodejs\timetango\utils\errorHandler.js' [2025-06-19T01:14:17.184Z] [139]
+. 2025-07-05 09:49:31.048 Copying "G:\workspace_nodejs\timetango\utils\errorHandler.js" to remote directory started.
+. 2025-07-05 09:49:31.048 Binary transfer mode selected.
+. 2025-07-05 09:49:31.048 Opening remote file.
+> 2025-07-05 09:49:31.048 Type: SSH_FXP_OPEN, Size: 72, Number: 23299
+< 2025-07-05 09:49:31.071 Type: SSH_FXP_HANDLE, Size: 13, Number: 23299
+> 2025-07-05 09:49:31.071 Type: SSH_FXP_WRITE, Size: 164, Number: 23814
+> 2025-07-05 09:49:31.072 Type: SSH_FXP_CLOSE, Size: 13, Number: 24068
+> 2025-07-05 09:49:31.072 Type: SSH_FXP_SETSTAT, Size: 68, Number: 23561
+< 2025-07-05 09:49:31.092 Type: SSH_FXP_STATUS, Size: 24, Number: 23814
+< 2025-07-05 09:49:31.092 Status code: 0
+< 2025-07-05 09:49:31.093 Type: SSH_FXP_STATUS, Size: 24, Number: 24068
+< 2025-07-05 09:49:31.093 Status code: 0
+. 2025-07-05 09:49:31.093 Preserving timestamp [2025-06-19T01:14:17.000Z]
+< 2025-07-05 09:49:31.109 Type: SSH_FXP_STATUS, Size: 24, Number: 23561
+< 2025-07-05 09:49:31.109 Status code: 0
+. 2025-07-05 09:49:31.109 Transfer done: 'G:\workspace_nodejs\timetango\utils\errorHandler.js' => '/home/timetango/timetango/utils/errorHandler.js' [139]
+. 2025-07-05 09:49:31.110 File: 'G:\workspace_nodejs\timetango\utils\jwt.js' [2025-06-25T10:24:09.030Z] [612]
+. 2025-07-05 09:49:31.110 Copying "G:\workspace_nodejs\timetango\utils\jwt.js" to remote directory started.
+. 2025-07-05 09:49:31.110 Binary transfer mode selected.
+. 2025-07-05 09:49:31.110 Opening remote file.
+> 2025-07-05 09:49:31.110 Type: SSH_FXP_OPEN, Size: 63, Number: 24323
+< 2025-07-05 09:49:31.131 Type: SSH_FXP_HANDLE, Size: 13, Number: 24323
+> 2025-07-05 09:49:31.131 Type: SSH_FXP_WRITE, Size: 637, Number: 24838
+> 2025-07-05 09:49:31.132 Type: SSH_FXP_CLOSE, Size: 13, Number: 25092
+> 2025-07-05 09:49:31.132 Type: SSH_FXP_SETSTAT, Size: 59, Number: 24585
+< 2025-07-05 09:49:31.152 Type: SSH_FXP_STATUS, Size: 24, Number: 24838
+< 2025-07-05 09:49:31.152 Status code: 0
+< 2025-07-05 09:49:31.152 Type: SSH_FXP_STATUS, Size: 24, Number: 25092
+< 2025-07-05 09:49:31.152 Status code: 0
+. 2025-07-05 09:49:31.153 Preserving timestamp [2025-06-25T10:24:09.000Z]
+< 2025-07-05 09:49:31.172 Type: SSH_FXP_STATUS, Size: 24, Number: 24585
+< 2025-07-05 09:49:31.172 Status code: 0
+. 2025-07-05 09:49:31.172 Transfer done: 'G:\workspace_nodejs\timetango\utils\jwt.js' => '/home/timetango/timetango/utils/jwt.js' [612]
+. 2025-07-05 09:49:31.172 File: 'G:\workspace_nodejs\timetango\utils\logger.js' [2025-06-27T09:53:56.011Z] [1356]
+. 2025-07-05 09:49:31.173 Copying "G:\workspace_nodejs\timetango\utils\logger.js" to remote directory started.
+. 2025-07-05 09:49:31.173 Binary transfer mode selected.
+. 2025-07-05 09:49:31.173 Opening remote file.
+> 2025-07-05 09:49:31.173 Type: SSH_FXP_OPEN, Size: 66, Number: 25347
+< 2025-07-05 09:49:31.193 Type: SSH_FXP_HANDLE, Size: 13, Number: 25347
+> 2025-07-05 09:49:31.193 Type: SSH_FXP_WRITE, Size: 1381, Number: 25862
+> 2025-07-05 09:49:31.194 Type: SSH_FXP_CLOSE, Size: 13, Number: 26116
+> 2025-07-05 09:49:31.194 Type: SSH_FXP_SETSTAT, Size: 62, Number: 25609
+< 2025-07-05 09:49:31.214 Type: SSH_FXP_STATUS, Size: 24, Number: 25862
+< 2025-07-05 09:49:31.214 Status code: 0
+< 2025-07-05 09:49:31.214 Type: SSH_FXP_STATUS, Size: 24, Number: 26116
+< 2025-07-05 09:49:31.214 Status code: 0
+. 2025-07-05 09:49:31.214 Preserving timestamp [2025-06-27T09:53:56.000Z]
+< 2025-07-05 09:49:31.237 Type: SSH_FXP_STATUS, Size: 24, Number: 25609
+< 2025-07-05 09:49:31.237 Status code: 0
+. 2025-07-05 09:49:31.237 Transfer done: 'G:\workspace_nodejs\timetango\utils\logger.js' => '/home/timetango/timetango/utils/logger.js' [1356]
+. 2025-07-05 09:49:31.237 Copying finished: Transferred: 3,272, Elapsed: 0:00:00, CPS: 12,163/s
+> 2025-07-05 09:49:31.238 Script: put G:\workspace_nodejs\timetango\routes /home/timetango/timetango/routes
+. 2025-07-05 09:49:31.238 Copying 1 files/directories to remote directory "/home/timetango/timetango/"
+. 2025-07-05 09:49:31.238   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: routes
+. 2025-07-05 09:49:31.238   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2025-07-05 09:49:31.238   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2025-07-05 09:49:31.239 File: 'G:\workspace_nodejs\timetango\routes' [2025-07-03T08:57:59.246Z] [0]
+. 2025-07-05 09:49:31.239 Listing file "/home/timetango/timetango/routes".
+> 2025-07-05 09:49:31.239 Type: SSH_FXP_LSTAT, Size: 41, Number: 26375
+< 2025-07-05 09:49:31.258 Type: SSH_FXP_ATTRS, Size: 37, Number: 26375
+. 2025-07-05 09:49:31.258 routes;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:31.258 File: 'G:\workspace_nodejs\timetango\routes\eventRoutes.js' [2025-06-25T06:53:57.160Z] [353]
+. 2025-07-05 09:49:31.259 Copying "G:\workspace_nodejs\timetango\routes\eventRoutes.js" to remote directory started.
+. 2025-07-05 09:49:31.259 Binary transfer mode selected.
+. 2025-07-05 09:49:31.259 Opening remote file.
+> 2025-07-05 09:49:31.259 Type: SSH_FXP_OPEN, Size: 72, Number: 26627
+< 2025-07-05 09:49:31.281 Type: SSH_FXP_HANDLE, Size: 13, Number: 26627
+> 2025-07-05 09:49:31.281 Type: SSH_FXP_WRITE, Size: 378, Number: 27142
+> 2025-07-05 09:49:31.281 Type: SSH_FXP_CLOSE, Size: 13, Number: 27396
+> 2025-07-05 09:49:31.282 Type: SSH_FXP_SETSTAT, Size: 68, Number: 26889
+< 2025-07-05 09:49:31.301 Type: SSH_FXP_STATUS, Size: 24, Number: 27142
+< 2025-07-05 09:49:31.301 Status code: 0
+< 2025-07-05 09:49:31.301 Type: SSH_FXP_STATUS, Size: 24, Number: 27396
+< 2025-07-05 09:49:31.301 Status code: 0
+. 2025-07-05 09:49:31.302 Preserving timestamp [2025-06-25T06:53:57.000Z]
+< 2025-07-05 09:49:31.321 Type: SSH_FXP_STATUS, Size: 24, Number: 26889
+< 2025-07-05 09:49:31.321 Status code: 0
+. 2025-07-05 09:49:31.321 Transfer done: 'G:\workspace_nodejs\timetango\routes\eventRoutes.js' => '/home/timetango/timetango/routes/eventRoutes.js' [353]
+. 2025-07-05 09:49:31.321 File: 'G:\workspace_nodejs\timetango\routes\masterRoutes.js' [2025-06-25T06:07:17.049Z] [298]
+. 2025-07-05 09:49:31.322 Copying "G:\workspace_nodejs\timetango\routes\masterRoutes.js" to remote directory started.
+. 2025-07-05 09:49:31.322 Binary transfer mode selected.
+. 2025-07-05 09:49:31.322 Opening remote file.
+> 2025-07-05 09:49:31.322 Type: SSH_FXP_OPEN, Size: 73, Number: 27651
+< 2025-07-05 09:49:31.342 Type: SSH_FXP_HANDLE, Size: 13, Number: 27651
+> 2025-07-05 09:49:31.342 Type: SSH_FXP_WRITE, Size: 323, Number: 28166
+> 2025-07-05 09:49:31.343 Type: SSH_FXP_CLOSE, Size: 13, Number: 28420
+> 2025-07-05 09:49:31.343 Type: SSH_FXP_SETSTAT, Size: 69, Number: 27913
+< 2025-07-05 09:49:31.363 Type: SSH_FXP_STATUS, Size: 24, Number: 28166
+< 2025-07-05 09:49:31.363 Status code: 0
+< 2025-07-05 09:49:31.363 Type: SSH_FXP_STATUS, Size: 24, Number: 28420
+< 2025-07-05 09:49:31.363 Status code: 0
+. 2025-07-05 09:49:31.364 Preserving timestamp [2025-06-25T06:07:17.000Z]
+< 2025-07-05 09:49:31.381 Type: SSH_FXP_STATUS, Size: 24, Number: 27913
+< 2025-07-05 09:49:31.382 Status code: 0
+. 2025-07-05 09:49:31.382 Transfer done: 'G:\workspace_nodejs\timetango\routes\masterRoutes.js' => '/home/timetango/timetango/routes/masterRoutes.js' [298]
+. 2025-07-05 09:49:31.382 File: 'G:\workspace_nodejs\timetango\routes\ownerRoutes.js' [2025-06-27T08:45:09.238Z] [292]
+. 2025-07-05 09:49:31.398 Copying "G:\workspace_nodejs\timetango\routes\ownerRoutes.js" to remote directory started.
+. 2025-07-05 09:49:31.398 Binary transfer mode selected.
+. 2025-07-05 09:49:31.398 Opening remote file.
+> 2025-07-05 09:49:31.398 Type: SSH_FXP_OPEN, Size: 72, Number: 28675
+< 2025-07-05 09:49:31.417 Type: SSH_FXP_HANDLE, Size: 13, Number: 28675
+> 2025-07-05 09:49:31.417 Type: SSH_FXP_WRITE, Size: 317, Number: 29190
+> 2025-07-05 09:49:31.418 Type: SSH_FXP_CLOSE, Size: 13, Number: 29444
+> 2025-07-05 09:49:31.418 Type: SSH_FXP_SETSTAT, Size: 68, Number: 28937
+< 2025-07-05 09:49:31.437 Type: SSH_FXP_STATUS, Size: 24, Number: 29190
+< 2025-07-05 09:49:31.437 Status code: 0
+< 2025-07-05 09:49:31.438 Type: SSH_FXP_STATUS, Size: 24, Number: 29444
+< 2025-07-05 09:49:31.438 Status code: 0
+. 2025-07-05 09:49:31.438 Preserving timestamp [2025-06-27T08:45:09.000Z]
+< 2025-07-05 09:49:31.455 Type: SSH_FXP_STATUS, Size: 24, Number: 28937
+< 2025-07-05 09:49:31.455 Status code: 0
+. 2025-07-05 09:49:31.455 Transfer done: 'G:\workspace_nodejs\timetango\routes\ownerRoutes.js' => '/home/timetango/timetango/routes/ownerRoutes.js' [292]
+. 2025-07-05 09:49:31.455 File: 'G:\workspace_nodejs\timetango\routes\shopRoutes.js' [2025-07-03T09:19:56.838Z] [291]
+. 2025-07-05 09:49:31.456 Copying "G:\workspace_nodejs\timetango\routes\shopRoutes.js" to remote directory started.
+. 2025-07-05 09:49:31.456 Binary transfer mode selected.
+. 2025-07-05 09:49:31.456 Opening remote file.
+> 2025-07-05 09:49:31.456 Type: SSH_FXP_OPEN, Size: 71, Number: 29699
+< 2025-07-05 09:49:31.476 Type: SSH_FXP_HANDLE, Size: 13, Number: 29699
+> 2025-07-05 09:49:31.476 Type: SSH_FXP_WRITE, Size: 316, Number: 30214
+> 2025-07-05 09:49:31.477 Type: SSH_FXP_CLOSE, Size: 13, Number: 30468
+> 2025-07-05 09:49:31.477 Type: SSH_FXP_SETSTAT, Size: 67, Number: 29961
+< 2025-07-05 09:49:31.497 Type: SSH_FXP_STATUS, Size: 24, Number: 30214
+< 2025-07-05 09:49:31.497 Status code: 0
+< 2025-07-05 09:49:31.497 Type: SSH_FXP_STATUS, Size: 24, Number: 30468
+< 2025-07-05 09:49:31.497 Status code: 0
+. 2025-07-05 09:49:31.497 Preserving timestamp [2025-07-03T09:19:56.000Z]
+< 2025-07-05 09:49:31.515 Type: SSH_FXP_STATUS, Size: 24, Number: 29961
+< 2025-07-05 09:49:31.515 Status code: 0
+. 2025-07-05 09:49:31.515 Transfer done: 'G:\workspace_nodejs\timetango\routes\shopRoutes.js' => '/home/timetango/timetango/routes/shopRoutes.js' [291]
+. 2025-07-05 09:49:31.515 File: 'G:\workspace_nodejs\timetango\routes\userRoutes.js' [2025-07-04T06:19:49.492Z] [792]
+. 2025-07-05 09:49:31.516 Copying "G:\workspace_nodejs\timetango\routes\userRoutes.js" to remote directory started.
+. 2025-07-05 09:49:31.517 Binary transfer mode selected.
+. 2025-07-05 09:49:31.517 Opening remote file.
+> 2025-07-05 09:49:31.517 Type: SSH_FXP_OPEN, Size: 71, Number: 30723
+< 2025-07-05 09:49:31.536 Type: SSH_FXP_HANDLE, Size: 13, Number: 30723
+> 2025-07-05 09:49:31.536 Type: SSH_FXP_WRITE, Size: 817, Number: 31238
+> 2025-07-05 09:49:31.536 Type: SSH_FXP_CLOSE, Size: 13, Number: 31492
+> 2025-07-05 09:49:31.536 Type: SSH_FXP_SETSTAT, Size: 67, Number: 30985
+< 2025-07-05 09:49:31.557 Type: SSH_FXP_STATUS, Size: 24, Number: 31238
+< 2025-07-05 09:49:31.557 Status code: 0
+< 2025-07-05 09:49:31.557 Type: SSH_FXP_STATUS, Size: 24, Number: 31492
+< 2025-07-05 09:49:31.557 Status code: 0
+. 2025-07-05 09:49:31.557 Preserving timestamp [2025-07-04T06:19:49.000Z]
+< 2025-07-05 09:49:31.575 Type: SSH_FXP_STATUS, Size: 24, Number: 30985
+< 2025-07-05 09:49:31.575 Status code: 0
+. 2025-07-05 09:49:31.575 Transfer done: 'G:\workspace_nodejs\timetango\routes\userRoutes.js' => '/home/timetango/timetango/routes/userRoutes.js' [792]
+. 2025-07-05 09:49:31.575 Copying finished: Transferred: 2,026, Elapsed: 0:00:00, CPS: 6,011/s
+> 2025-07-05 09:49:31.576 Script: put G:\workspace_nodejs\timetango\controlllers /home/timetango/timetango/controlllers
+. 2025-07-05 09:49:31.576 Copying 1 files/directories to remote directory "/home/timetango/timetango/" - total size: 0
+. 2025-07-05 09:49:31.576   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: controlllers
+. 2025-07-05 09:49:31.576   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2025-07-05 09:49:31.576   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+* 2025-07-05 09:49:31.577 (EOSError) System Error.  Code: 2.
+* 2025-07-05 09:49:31.577 The system cannot find the file specified
+. 2025-07-05 09:49:31.577 Asking user:
+. 2025-07-05 09:49:31.577 File or folder 'G:\workspace_nodejs\timetango\controlllers' does not exist. ("System Error.  Code: 2.
+. 2025-07-05 09:49:31.577 The system cannot find the file specified")
+< 2025-07-05 09:49:31.577 Script: File or folder 'G:\workspace_nodejs\timetango\controlllers' does not exist.
+< 2025-07-05 09:49:31.577 Script: System Error.  Code: 2.
+< 2025-07-05 09:49:31.577 The system cannot find the file specified
+. 2025-07-05 09:49:31.578 Answer: Abort
+* 2025-07-05 09:49:31.578 (ESkipFile) File or folder 'G:\workspace_nodejs\timetango\controlllers' does not exist.
+* 2025-07-05 09:49:31.578 System Error.  Code: 2.
+* 2025-07-05 09:49:31.578 The system cannot find the file specified
+. 2025-07-05 09:49:31.578 Copying finished: Transferred: 0, Elapsed: 0:00:00, CPS: 0/s
+. 2025-07-05 09:49:31.578 Script: Failed
+. 2025-07-05 09:49:31.578 Script: Exit code: 1
+. 2025-07-05 09:49:31.579 Closing connection.
+. 2025-07-05 09:49:31.579 Sending special code: 1
+. 2025-07-05 09:49:31.599 Session sent command exit status 0
+. 2025-07-05 09:49:31.599 Main session channel closed
+. 2025-07-05 09:49:31.599 All channels closed
+. 2025-07-05 09:49:48.047 --------------------------------------------------------------------------
+. 2025-07-05 09:49:48.047 WinSCP Version 6.3.6 (Build 15073 2024-11-25) (OS 10.0.19045 – Windows 10 Enterprise)
+. 2025-07-05 09:49:48.047 Configuration: HKCU\Software\Martin Prikryl\WinSCP 2\
+. 2025-07-05 09:49:48.047 Log level: Normal
+. 2025-07-05 09:49:48.047 Local account: NEO6\Neo
+. 2025-07-05 09:49:48.047 Working directory: G:\workspace_nodejs\timetango
+. 2025-07-05 09:49:48.047 Process ID: 30352
+. 2025-07-05 09:49:48.078 Ancestor processes: WinSCP, powershell, Code, Code, explorer, ...
+. 2025-07-05 09:49:48.079 Command-line: "D:\winscp\winscp.exe" /console=6.3.6 /consoleinstance=_1200_424 "root@103.15.222.110_LANIC" "/script=sync.txt" "/log=sync.log" 
+. 2025-07-05 09:49:48.079 Time zone: Current: GMT+7 (SE Asia Standard Time), No DST
+. 2025-07-05 09:49:48.080 Login time: Saturday, July 5, 2025 9:49:48 AM
+. 2025-07-05 09:49:48.080 --------------------------------------------------------------------------
+. 2025-07-05 09:49:48.080 Script: Retrospectively logging previous script records:
+< 2025-07-05 09:49:48.080 Script: Opening session using command-line parameter in scripting is deprecated. Use 'open' command instead.
+< 2025-07-05 09:49:48.080 Script: In scripting you should not rely on saved sites, use this command instead:
+< 2025-07-05 09:49:48.080 Script: open sftp://root:***@103.15.222.110/ -hostkey="ssh-rsa 3072 n59RpatkT+bA5J2H7/ZfEEmEVDdxFpTn1GAW/TKx/pg"
+. 2025-07-05 09:49:48.080 --------------------------------------------------------------------------
+. 2025-07-05 09:49:48.080 Session name: root@103.15.222.110_LANIC (Site)
+. 2025-07-05 09:49:48.080 Host name: 103.15.222.110 (Port: 22)
+. 2025-07-05 09:49:48.080 User name: root (Password: Yes, Key file: No, Passphrase: No)
+. 2025-07-05 09:49:48.080 Tunnel: No
+. 2025-07-05 09:49:48.080 Transfer Protocol: SFTP (SCP)
+. 2025-07-05 09:49:48.080 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2025-07-05 09:49:48.080 Disable Nagle: No
+. 2025-07-05 09:49:48.080 Proxy: None
+. 2025-07-05 09:49:48.080 Send buffer: 262144
+. 2025-07-05 09:49:48.080 Compression: No
+. 2025-07-05 09:49:48.080 Bypass authentication: No
+. 2025-07-05 09:49:48.080 Try agent: Yes; Agent forwarding: No; KI: Yes; GSSAPI: Yes
+. 2025-07-05 09:49:48.080 GSSAPI: KEX: No; Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2025-07-05 09:49:48.080 Ciphers: aes,chacha20,aesgcm,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2025-07-05 09:49:48.080 KEX: ntru-curve25519,ecdh,dh-gex-sha1,dh-group18-sha512,dh-group17-sha512,dh-group16-sha512,dh-group15-sha512,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2025-07-05 09:49:48.080 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2025-07-05 09:49:48.080 Simple channel: Yes
+. 2025-07-05 09:49:48.080 Return code variable: Autodetect; Lookup user groups: Auto
+. 2025-07-05 09:49:48.080 Shell: default
+. 2025-07-05 09:49:48.080 EOL: LF, UTF: Auto
+. 2025-07-05 09:49:48.080 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2025-07-05 09:49:48.080 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2025-07-05 09:49:48.080 SFTP Bugs: Auto,Auto
+. 2025-07-05 09:49:48.080 SFTP Server: default
+. 2025-07-05 09:49:48.080 Local directory: G:\workspace_nodejs\timetango, Remote directory: /home/timetango/timetango, Update: Yes, Cache: Yes
+. 2025-07-05 09:49:48.080 Cache directory changes: Yes, Permanent: Yes
+. 2025-07-05 09:49:48.080 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2025-07-05 09:49:48.080 DST mode: Unix
+. 2025-07-05 09:49:48.080 --------------------------------------------------------------------------
+< 2025-07-05 09:49:48.080 Script: Searching for host...
+. 2025-07-05 09:49:48.082 Looking up host "103.15.222.110" for SSH connection
+. 2025-07-05 09:49:48.083 Connecting to 103.15.222.110 port 22
+. 2025-07-05 09:49:48.100 Connected to 103.15.222.110
+< 2025-07-05 09:49:48.100 Script: Connecting to host...
+. 2025-07-05 09:49:48.101 We claim version: SSH-2.0-WinSCP_release_6.3.6
+. 2025-07-05 09:49:48.101 Connected to 103.15.222.110
+. 2025-07-05 09:49:48.132 Remote version: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4
+. 2025-07-05 09:49:48.132 Using SSH protocol version 2
+. 2025-07-05 09:49:48.135 Have a known host key of type rsa2
+. 2025-07-05 09:49:48.154 Doing ECDH key exchange with curve Curve25519, using hash SHA-256
+. 2025-07-05 09:49:48.254 Host key fingerprint is:
+. 2025-07-05 09:49:48.254 ssh-rsa 3072 SHA256:n59RpatkT+bA5J2H7/ZfEEmEVDdxFpTn1GAW/TKx/pg
+< 2025-07-05 09:49:48.254 Script: Authenticating...
+. 2025-07-05 09:49:48.254 Host key matches cached key
+. 2025-07-05 09:49:48.255 Initialised AES-256 SDCTR (AES-NI accelerated) [aes256-ctr] outbound encryption
+. 2025-07-05 09:49:48.255 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2025-07-05 09:49:48.255 Initialised AES-256 SDCTR (AES-NI accelerated) [aes256-ctr] inbound encryption
+. 2025-07-05 09:49:48.255 Initialised HMAC-SHA-256 inbound MAC algorithm
+! 2025-07-05 09:49:48.274 Using username "root".
+< 2025-07-05 09:49:48.274 Script: Using username "root".
+. 2025-07-05 09:49:48.296 Server offered these authentication methods: publickey,password
+. 2025-07-05 09:49:48.296 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2025-07-05 09:49:48.296 Using stored password.
+< 2025-07-05 09:49:48.296 Script: Authenticating with pre-entered password.
+. 2025-07-05 09:49:48.296 Sent password
+. 2025-07-05 09:49:48.317 Access granted
+. 2025-07-05 09:49:48.317 Opening main session channel
+. 2025-07-05 09:49:48.960 Opened main channel
+. 2025-07-05 09:49:48.976 Started a shell/command
+< 2025-07-05 09:49:48.977 Script: Authenticated.
+. 2025-07-05 09:49:48.977 --------------------------------------------------------------------------
+. 2025-07-05 09:49:48.977 Using SFTP protocol.
+. 2025-07-05 09:49:48.977 Doing startup conversation with host.
+< 2025-07-05 09:49:48.977 Script: Starting the session...
+> 2025-07-05 09:49:48.977 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2025-07-05 09:49:48.993 Type: SSH_FXP_VERSION, Size: 179, Number: -1
+. 2025-07-05 09:49:48.993 SFTP version 3 negotiated.
+. 2025-07-05 09:49:48.993 Supports extension posix-rename@openssh.com="1"
+. 2025-07-05 09:49:48.993 Supports statvfs@openssh.com extension version 2
+. 2025-07-05 09:49:48.993 Unknown server extension fstatvfs@openssh.com="2"
+. 2025-07-05 09:49:48.993 Supports hardlink@openssh.com extension version 1
+. 2025-07-05 09:49:48.993 Unknown server extension fsync@openssh.com="1"
+. 2025-07-05 09:49:48.993 Unknown server extension lsetstat@openssh.com="1"
+. 2025-07-05 09:49:48.993 We believe the server has signed timestamps bug
+. 2025-07-05 09:49:48.993 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2025-07-05 09:49:48.993 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2025-07-05 09:49:48.993 Changing directory to "/home/timetango/timetango".
+. 2025-07-05 09:49:48.993 Getting real path for '/home/timetango/timetango'
+> 2025-07-05 09:49:48.993 Type: SSH_FXP_REALPATH, Size: 34, Number: 16
+< 2025-07-05 09:49:49.008 Type: SSH_FXP_NAME, Size: 71, Number: 16
+. 2025-07-05 09:49:49.008 Real path is '/home/timetango/timetango'
+. 2025-07-05 09:49:49.008 Trying to open directory "/home/timetango/timetango".
+> 2025-07-05 09:49:49.008 Type: SSH_FXP_LSTAT, Size: 34, Number: 263
+< 2025-07-05 09:49:49.023 Type: SSH_FXP_ATTRS, Size: 37, Number: 263
+. 2025-07-05 09:49:49.023 Getting current directory name.
+. 2025-07-05 09:49:49.023 Startup conversation with host finished.
+< 2025-07-05 09:49:49.023 Script: Session started.
+< 2025-07-05 09:49:49.023 Script: Active session: [1] root@103.15.222.110_LANIC
+> 2025-07-05 09:49:49.025 Script: option confirm off
+< 2025-07-05 09:49:49.025 Script: confirm         off       
+> 2025-07-05 09:49:49.025 Script: cd /home/timetango/timetango
+. 2025-07-05 09:49:49.025 Cached directory change via "/home/timetango/timetango" to "/home/timetango/timetango".
+. 2025-07-05 09:49:49.025 Getting current directory name.
+< 2025-07-05 09:49:49.025 Script: /home/timetango/timetango
+> 2025-07-05 09:49:49.026 Script: put G:\workspace_nodejs\timetango\views /home/timetango/timetango/views
+. 2025-07-05 09:49:49.026 Copying 1 files/directories to remote directory "/home/timetango/timetango/"
+. 2025-07-05 09:49:49.026   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: views
+. 2025-07-05 09:49:49.026   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2025-07-05 09:49:49.026   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2025-07-05 09:49:49.026 File: 'G:\workspace_nodejs\timetango\views' [2025-06-26T10:27:15.604Z] [0]
+. 2025-07-05 09:49:49.027 Listing file "/home/timetango/timetango/views".
+> 2025-07-05 09:49:49.027 Type: SSH_FXP_LSTAT, Size: 40, Number: 519
+< 2025-07-05 09:49:49.042 Type: SSH_FXP_ATTRS, Size: 37, Number: 519
+. 2025-07-05 09:49:49.042 views;D;0;2025-07-05T02:42:16.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:49.042 File: 'G:\workspace_nodejs\timetango\views\del_owner.ejs' [2025-06-26T10:21:10.478Z] [9986]
+. 2025-07-05 09:49:49.042 Copying "G:\workspace_nodejs\timetango\views\del_owner.ejs" to remote directory started.
+. 2025-07-05 09:49:49.042 Binary transfer mode selected.
+. 2025-07-05 09:49:49.042 Opening remote file.
+> 2025-07-05 09:49:49.042 Type: SSH_FXP_OPEN, Size: 70, Number: 771
+< 2025-07-05 09:49:49.059 Type: SSH_FXP_HANDLE, Size: 13, Number: 771
+> 2025-07-05 09:49:49.059 Type: SSH_FXP_WRITE, Size: 10011, Number: 1286
+> 2025-07-05 09:49:49.059 Type: SSH_FXP_CLOSE, Size: 13, Number: 1540
+> 2025-07-05 09:49:49.059 Type: SSH_FXP_SETSTAT, Size: 66, Number: 1033
+< 2025-07-05 09:49:49.079 Type: SSH_FXP_STATUS, Size: 24, Number: 1286
+< 2025-07-05 09:49:49.079 Status code: 0
+< 2025-07-05 09:49:49.079 Type: SSH_FXP_STATUS, Size: 24, Number: 1540
+< 2025-07-05 09:49:49.079 Status code: 0
+. 2025-07-05 09:49:49.079 Preserving timestamp [2025-06-26T10:21:10.000Z]
+< 2025-07-05 09:49:49.092 Type: SSH_FXP_STATUS, Size: 24, Number: 1033
+< 2025-07-05 09:49:49.092 Status code: 0
+. 2025-07-05 09:49:49.092 Transfer done: 'G:\workspace_nodejs\timetango\views\del_owner.ejs' => '/home/timetango/timetango/views/del_owner.ejs' [9986]
+. 2025-07-05 09:49:49.092 File: 'G:\workspace_nodejs\timetango\views\groupid' [2025-07-03T08:40:43.763Z] [0]
+. 2025-07-05 09:49:49.093 Listing file "/home/timetango/timetango/views/groupid".
+> 2025-07-05 09:49:49.093 Type: SSH_FXP_LSTAT, Size: 48, Number: 1799
+< 2025-07-05 09:49:49.109 Type: SSH_FXP_ATTRS, Size: 37, Number: 1799
+. 2025-07-05 09:49:49.109 groupid;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:49.109 File: 'G:\workspace_nodejs\timetango\views\groupid\default' [2025-06-27T08:24:09.281Z] [0]
+. 2025-07-05 09:49:49.110 Listing file "/home/timetango/timetango/views/groupid/default".
+> 2025-07-05 09:49:49.110 Type: SSH_FXP_LSTAT, Size: 56, Number: 2055
+< 2025-07-05 09:49:49.128 Type: SSH_FXP_ATTRS, Size: 37, Number: 2055
+. 2025-07-05 09:49:49.128 default;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:49.128 File: 'G:\workspace_nodejs\timetango\views\groupid\default\me.ejs' [2025-06-26T10:54:17.278Z] [496]
+. 2025-07-05 09:49:49.128 Copying "G:\workspace_nodejs\timetango\views\groupid\default\me.ejs" to remote directory started.
+. 2025-07-05 09:49:49.128 Binary transfer mode selected.
+. 2025-07-05 09:49:49.128 Opening remote file.
+> 2025-07-05 09:49:49.129 Type: SSH_FXP_OPEN, Size: 79, Number: 2307
+< 2025-07-05 09:49:49.146 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2025-07-05 09:49:49.146 Type: SSH_FXP_WRITE, Size: 521, Number: 2822
+> 2025-07-05 09:49:49.147 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+> 2025-07-05 09:49:49.147 Type: SSH_FXP_SETSTAT, Size: 75, Number: 2569
+< 2025-07-05 09:49:49.164 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2025-07-05 09:49:49.164 Status code: 0
+< 2025-07-05 09:49:49.164 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2025-07-05 09:49:49.164 Status code: 0
+. 2025-07-05 09:49:49.164 Preserving timestamp [2025-06-26T10:54:17.000Z]
+< 2025-07-05 09:49:49.188 Type: SSH_FXP_STATUS, Size: 24, Number: 2569
+< 2025-07-05 09:49:49.188 Status code: 0
+. 2025-07-05 09:49:49.188 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\default\me.ejs' => '/home/timetango/timetango/views/groupid/default/me.ejs' [496]
+. 2025-07-05 09:49:49.188 File: 'G:\workspace_nodejs\timetango\views\groupid\default\menu.ejs' [2025-06-26T10:14:55.131Z] [414]
+. 2025-07-05 09:49:49.188 Copying "G:\workspace_nodejs\timetango\views\groupid\default\menu.ejs" to remote directory started.
+. 2025-07-05 09:49:49.188 Binary transfer mode selected.
+. 2025-07-05 09:49:49.188 Opening remote file.
+> 2025-07-05 09:49:49.188 Type: SSH_FXP_OPEN, Size: 81, Number: 3331
+< 2025-07-05 09:49:49.205 Type: SSH_FXP_HANDLE, Size: 13, Number: 3331
+> 2025-07-05 09:49:49.205 Type: SSH_FXP_WRITE, Size: 439, Number: 3846
+> 2025-07-05 09:49:49.206 Type: SSH_FXP_CLOSE, Size: 13, Number: 4100
+> 2025-07-05 09:49:49.206 Type: SSH_FXP_SETSTAT, Size: 77, Number: 3593
+< 2025-07-05 09:49:49.223 Type: SSH_FXP_STATUS, Size: 24, Number: 3846
+< 2025-07-05 09:49:49.223 Status code: 0
+< 2025-07-05 09:49:49.224 Type: SSH_FXP_STATUS, Size: 24, Number: 4100
+< 2025-07-05 09:49:49.224 Status code: 0
+. 2025-07-05 09:49:49.224 Preserving timestamp [2025-06-26T10:14:55.000Z]
+< 2025-07-05 09:49:49.238 Type: SSH_FXP_STATUS, Size: 24, Number: 3593
+< 2025-07-05 09:49:49.238 Status code: 0
+. 2025-07-05 09:49:49.238 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\default\menu.ejs' => '/home/timetango/timetango/views/groupid/default/menu.ejs' [414]
+. 2025-07-05 09:49:49.238 File: 'G:\workspace_nodejs\timetango\views\groupid\Neo' [2025-06-28T02:08:49.942Z] [0]
+. 2025-07-05 09:49:49.239 Listing file "/home/timetango/timetango/views/groupid/Neo".
+> 2025-07-05 09:49:49.239 Type: SSH_FXP_LSTAT, Size: 52, Number: 4359
+< 2025-07-05 09:49:49.255 Type: SSH_FXP_ATTRS, Size: 37, Number: 4359
+. 2025-07-05 09:49:49.255 Neo;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:49.255 File: 'G:\workspace_nodejs\timetango\views\groupid\Neo\list_owners.ejs' [2025-07-05T01:50:29.610Z] [15866]
+. 2025-07-05 09:49:49.256 Copying "G:\workspace_nodejs\timetango\views\groupid\Neo\list_owners.ejs" to remote directory started.
+. 2025-07-05 09:49:49.256 Binary transfer mode selected.
+. 2025-07-05 09:49:49.256 Opening remote file.
+> 2025-07-05 09:49:49.256 Type: SSH_FXP_OPEN, Size: 84, Number: 4611
+< 2025-07-05 09:49:49.274 Type: SSH_FXP_HANDLE, Size: 13, Number: 4611
+> 2025-07-05 09:49:49.274 Type: SSH_FXP_WRITE, Size: 15891, Number: 5126
+> 2025-07-05 09:49:49.275 Type: SSH_FXP_CLOSE, Size: 13, Number: 5380
+> 2025-07-05 09:49:49.275 Type: SSH_FXP_SETSTAT, Size: 80, Number: 4873
+< 2025-07-05 09:49:49.292 Type: SSH_FXP_STATUS, Size: 24, Number: 5126
+< 2025-07-05 09:49:49.292 Status code: 0
+< 2025-07-05 09:49:49.293 Type: SSH_FXP_STATUS, Size: 24, Number: 5380
+< 2025-07-05 09:49:49.293 Status code: 0
+. 2025-07-05 09:49:49.293 Preserving timestamp [2025-07-05T01:50:29.000Z]
+< 2025-07-05 09:49:49.306 Type: SSH_FXP_STATUS, Size: 24, Number: 4873
+< 2025-07-05 09:49:49.306 Status code: 0
+. 2025-07-05 09:49:49.306 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Neo\list_owners.ejs' => '/home/timetango/timetango/views/groupid/Neo/list_owners.ejs' [15866]
+. 2025-07-05 09:49:49.306 File: 'G:\workspace_nodejs\timetango\views\groupid\Neo\me.ejs' [2025-07-04T02:22:19.205Z] [8044]
+. 2025-07-05 09:49:49.307 Copying "G:\workspace_nodejs\timetango\views\groupid\Neo\me.ejs" to remote directory started.
+. 2025-07-05 09:49:49.307 Binary transfer mode selected.
+. 2025-07-05 09:49:49.307 Opening remote file.
+> 2025-07-05 09:49:49.307 Type: SSH_FXP_OPEN, Size: 75, Number: 5635
+< 2025-07-05 09:49:49.324 Type: SSH_FXP_HANDLE, Size: 13, Number: 5635
+> 2025-07-05 09:49:49.324 Type: SSH_FXP_WRITE, Size: 8069, Number: 6150
+> 2025-07-05 09:49:49.324 Type: SSH_FXP_CLOSE, Size: 13, Number: 6404
+> 2025-07-05 09:49:49.324 Type: SSH_FXP_SETSTAT, Size: 71, Number: 5897
+< 2025-07-05 09:49:49.338 Type: SSH_FXP_STATUS, Size: 24, Number: 6150
+< 2025-07-05 09:49:49.338 Status code: 0
+< 2025-07-05 09:49:49.339 Type: SSH_FXP_STATUS, Size: 24, Number: 6404
+< 2025-07-05 09:49:49.339 Status code: 0
+. 2025-07-05 09:49:49.339 Preserving timestamp [2025-07-04T02:22:19.000Z]
+< 2025-07-05 09:49:49.353 Type: SSH_FXP_STATUS, Size: 24, Number: 5897
+< 2025-07-05 09:49:49.353 Status code: 0
+. 2025-07-05 09:49:49.353 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Neo\me.ejs' => '/home/timetango/timetango/views/groupid/Neo/me.ejs' [8044]
+. 2025-07-05 09:49:49.353 File: 'G:\workspace_nodejs\timetango\views\groupid\Neo\menu.ejs' [2025-06-28T02:07:02.912Z] [707]
+. 2025-07-05 09:49:49.353 Copying "G:\workspace_nodejs\timetango\views\groupid\Neo\menu.ejs" to remote directory started.
+. 2025-07-05 09:49:49.353 Binary transfer mode selected.
+. 2025-07-05 09:49:49.353 Opening remote file.
+> 2025-07-05 09:49:49.353 Type: SSH_FXP_OPEN, Size: 77, Number: 6659
+< 2025-07-05 09:49:49.370 Type: SSH_FXP_HANDLE, Size: 13, Number: 6659
+> 2025-07-05 09:49:49.370 Type: SSH_FXP_WRITE, Size: 732, Number: 7174
+> 2025-07-05 09:49:49.371 Type: SSH_FXP_CLOSE, Size: 13, Number: 7428
+> 2025-07-05 09:49:49.371 Type: SSH_FXP_SETSTAT, Size: 73, Number: 6921
+< 2025-07-05 09:49:49.387 Type: SSH_FXP_STATUS, Size: 24, Number: 7174
+< 2025-07-05 09:49:49.387 Status code: 0
+< 2025-07-05 09:49:49.388 Type: SSH_FXP_STATUS, Size: 24, Number: 7428
+< 2025-07-05 09:49:49.388 Status code: 0
+. 2025-07-05 09:49:49.388 Preserving timestamp [2025-06-28T02:07:02.000Z]
+< 2025-07-05 09:49:49.401 Type: SSH_FXP_STATUS, Size: 24, Number: 6921
+< 2025-07-05 09:49:49.401 Status code: 0
+. 2025-07-05 09:49:49.401 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Neo\menu.ejs' => '/home/timetango/timetango/views/groupid/Neo/menu.ejs' [707]
+. 2025-07-05 09:49:49.402 File: 'G:\workspace_nodejs\timetango\views\groupid\Owner' [2025-07-04T06:17:01.451Z] [0]
+. 2025-07-05 09:49:49.402 Listing file "/home/timetango/timetango/views/groupid/Owner".
+> 2025-07-05 09:49:49.402 Type: SSH_FXP_LSTAT, Size: 54, Number: 7687
+< 2025-07-05 09:49:49.419 Type: SSH_FXP_ATTRS, Size: 37, Number: 7687
+. 2025-07-05 09:49:49.419 Owner;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:49.419 File: 'G:\workspace_nodejs\timetango\views\groupid\Owner\list_customers.ejs' [2025-07-04T06:43:14.607Z] [18791]
+. 2025-07-05 09:49:49.420 Copying "G:\workspace_nodejs\timetango\views\groupid\Owner\list_customers.ejs" to remote directory started.
+. 2025-07-05 09:49:49.420 Binary transfer mode selected.
+. 2025-07-05 09:49:49.420 Opening remote file.
+> 2025-07-05 09:49:49.420 Type: SSH_FXP_OPEN, Size: 89, Number: 7939
+< 2025-07-05 09:49:49.437 Type: SSH_FXP_HANDLE, Size: 13, Number: 7939
+> 2025-07-05 09:49:49.437 Type: SSH_FXP_WRITE, Size: 18816, Number: 8454
+> 2025-07-05 09:49:49.438 Type: SSH_FXP_CLOSE, Size: 13, Number: 8708
+> 2025-07-05 09:49:49.438 Type: SSH_FXP_SETSTAT, Size: 85, Number: 8201
+< 2025-07-05 09:49:49.458 Type: SSH_FXP_STATUS, Size: 24, Number: 8454
+< 2025-07-05 09:49:49.458 Status code: 0
+< 2025-07-05 09:49:49.459 Type: SSH_FXP_STATUS, Size: 24, Number: 8708
+< 2025-07-05 09:49:49.459 Status code: 0
+. 2025-07-05 09:49:49.459 Preserving timestamp [2025-07-04T06:43:14.000Z]
+< 2025-07-05 09:49:49.469 Type: SSH_FXP_STATUS, Size: 24, Number: 8201
+< 2025-07-05 09:49:49.469 Status code: 0
+. 2025-07-05 09:49:49.469 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Owner\list_customers.ejs' => '/home/timetango/timetango/views/groupid/Owner/list_customers.ejs' [18791]
+. 2025-07-05 09:49:49.470 File: 'G:\workspace_nodejs\timetango\views\groupid\Owner\list_shop.ejs' [2025-07-04T06:43:36.269Z] [16372]
+. 2025-07-05 09:49:49.470 Copying "G:\workspace_nodejs\timetango\views\groupid\Owner\list_shop.ejs" to remote directory started.
+. 2025-07-05 09:49:49.471 Binary transfer mode selected.
+. 2025-07-05 09:49:49.471 Opening remote file.
+> 2025-07-05 09:49:49.471 Type: SSH_FXP_OPEN, Size: 84, Number: 8963
+< 2025-07-05 09:49:49.489 Type: SSH_FXP_HANDLE, Size: 13, Number: 8963
+> 2025-07-05 09:49:49.489 Type: SSH_FXP_WRITE, Size: 16397, Number: 9478
+> 2025-07-05 09:49:49.490 Type: SSH_FXP_CLOSE, Size: 13, Number: 9732
+> 2025-07-05 09:49:49.490 Type: SSH_FXP_SETSTAT, Size: 80, Number: 9225
+< 2025-07-05 09:49:49.507 Type: SSH_FXP_STATUS, Size: 24, Number: 9478
+< 2025-07-05 09:49:49.507 Status code: 0
+< 2025-07-05 09:49:49.507 Type: SSH_FXP_STATUS, Size: 24, Number: 9732
+< 2025-07-05 09:49:49.507 Status code: 0
+. 2025-07-05 09:49:49.508 Preserving timestamp [2025-07-04T06:43:36.000Z]
+< 2025-07-05 09:49:49.519 Type: SSH_FXP_STATUS, Size: 24, Number: 9225
+< 2025-07-05 09:49:49.519 Status code: 0
+. 2025-07-05 09:49:49.519 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Owner\list_shop.ejs' => '/home/timetango/timetango/views/groupid/Owner/list_shop.ejs' [16372]
+. 2025-07-05 09:49:49.520 File: 'G:\workspace_nodejs\timetango\views\groupid\Owner\list_users.ejs' [2025-07-04T06:43:46.037Z] [19810]
+. 2025-07-05 09:49:49.520 Copying "G:\workspace_nodejs\timetango\views\groupid\Owner\list_users.ejs" to remote directory started.
+. 2025-07-05 09:49:49.520 Binary transfer mode selected.
+. 2025-07-05 09:49:49.520 Opening remote file.
+> 2025-07-05 09:49:49.520 Type: SSH_FXP_OPEN, Size: 85, Number: 9987
+< 2025-07-05 09:49:49.536 Type: SSH_FXP_HANDLE, Size: 13, Number: 9987
+> 2025-07-05 09:49:49.536 Type: SSH_FXP_WRITE, Size: 19835, Number: 10502
+> 2025-07-05 09:49:49.537 Type: SSH_FXP_CLOSE, Size: 13, Number: 10756
+> 2025-07-05 09:49:49.537 Type: SSH_FXP_SETSTAT, Size: 81, Number: 10249
+< 2025-07-05 09:49:49.558 Type: SSH_FXP_STATUS, Size: 24, Number: 10502
+< 2025-07-05 09:49:49.558 Status code: 0
+< 2025-07-05 09:49:49.559 Type: SSH_FXP_STATUS, Size: 24, Number: 10756
+< 2025-07-05 09:49:49.559 Status code: 0
+. 2025-07-05 09:49:49.559 Preserving timestamp [2025-07-04T06:43:46.000Z]
+< 2025-07-05 09:49:49.568 Type: SSH_FXP_STATUS, Size: 24, Number: 10249
+< 2025-07-05 09:49:49.568 Status code: 0
+. 2025-07-05 09:49:49.568 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Owner\list_users.ejs' => '/home/timetango/timetango/views/groupid/Owner/list_users.ejs' [19810]
+. 2025-07-05 09:49:49.568 File: 'G:\workspace_nodejs\timetango\views\groupid\Owner\me.ejs' [2025-07-04T02:22:44.763Z] [8044]
+. 2025-07-05 09:49:49.568 Copying "G:\workspace_nodejs\timetango\views\groupid\Owner\me.ejs" to remote directory started.
+. 2025-07-05 09:49:49.568 Binary transfer mode selected.
+. 2025-07-05 09:49:49.568 Opening remote file.
+> 2025-07-05 09:49:49.568 Type: SSH_FXP_OPEN, Size: 77, Number: 11011
+< 2025-07-05 09:49:49.584 Type: SSH_FXP_HANDLE, Size: 13, Number: 11011
+> 2025-07-05 09:49:49.584 Type: SSH_FXP_WRITE, Size: 8069, Number: 11526
+> 2025-07-05 09:49:49.585 Type: SSH_FXP_CLOSE, Size: 13, Number: 11780
+> 2025-07-05 09:49:49.585 Type: SSH_FXP_SETSTAT, Size: 73, Number: 11273
+< 2025-07-05 09:49:49.601 Type: SSH_FXP_STATUS, Size: 24, Number: 11526
+< 2025-07-05 09:49:49.601 Status code: 0
+< 2025-07-05 09:49:49.602 Type: SSH_FXP_STATUS, Size: 24, Number: 11780
+< 2025-07-05 09:49:49.602 Status code: 0
+. 2025-07-05 09:49:49.602 Preserving timestamp [2025-07-04T02:22:44.000Z]
+< 2025-07-05 09:49:49.615 Type: SSH_FXP_STATUS, Size: 24, Number: 11273
+< 2025-07-05 09:49:49.615 Status code: 0
+. 2025-07-05 09:49:49.615 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Owner\me.ejs' => '/home/timetango/timetango/views/groupid/Owner/me.ejs' [8044]
+. 2025-07-05 09:49:49.615 File: 'G:\workspace_nodejs\timetango\views\groupid\Owner\menu.ejs' [2025-07-04T06:18:01.542Z] [1310]
+. 2025-07-05 09:49:49.615 Copying "G:\workspace_nodejs\timetango\views\groupid\Owner\menu.ejs" to remote directory started.
+. 2025-07-05 09:49:49.616 Binary transfer mode selected.
+. 2025-07-05 09:49:49.616 Opening remote file.
+> 2025-07-05 09:49:49.616 Type: SSH_FXP_OPEN, Size: 79, Number: 12035
+< 2025-07-05 09:49:49.631 Type: SSH_FXP_HANDLE, Size: 13, Number: 12035
+> 2025-07-05 09:49:49.632 Type: SSH_FXP_WRITE, Size: 1335, Number: 12550
+> 2025-07-05 09:49:49.632 Type: SSH_FXP_CLOSE, Size: 13, Number: 12804
+> 2025-07-05 09:49:49.632 Type: SSH_FXP_SETSTAT, Size: 75, Number: 12297
+< 2025-07-05 09:49:49.649 Type: SSH_FXP_STATUS, Size: 24, Number: 12550
+< 2025-07-05 09:49:49.649 Status code: 0
+< 2025-07-05 09:49:49.649 Type: SSH_FXP_STATUS, Size: 24, Number: 12804
+< 2025-07-05 09:49:49.649 Status code: 0
+. 2025-07-05 09:49:49.649 Preserving timestamp [2025-07-04T06:18:01.000Z]
+< 2025-07-05 09:49:49.663 Type: SSH_FXP_STATUS, Size: 24, Number: 12297
+< 2025-07-05 09:49:49.663 Status code: 0
+. 2025-07-05 09:49:49.663 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Owner\menu.ejs' => '/home/timetango/timetango/views/groupid/Owner/menu.ejs' [1310]
+. 2025-07-05 09:49:49.664 File: 'G:\workspace_nodejs\timetango\views\groupid\Shop' [2025-06-26T10:18:31.433Z] [0]
+. 2025-07-05 09:49:49.664 Listing file "/home/timetango/timetango/views/groupid/Shop".
+> 2025-07-05 09:49:49.664 Type: SSH_FXP_LSTAT, Size: 53, Number: 13063
+< 2025-07-05 09:49:49.681 Type: SSH_FXP_ATTRS, Size: 37, Number: 13063
+. 2025-07-05 09:49:49.681 Shop;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:49.682 File: 'G:\workspace_nodejs\timetango\views\groupid\Tech' [2025-06-26T10:22:51.957Z] [0]
+. 2025-07-05 09:49:49.682 Listing file "/home/timetango/timetango/views/groupid/Tech".
+> 2025-07-05 09:49:49.682 Type: SSH_FXP_LSTAT, Size: 53, Number: 13319
+< 2025-07-05 09:49:49.698 Type: SSH_FXP_ATTRS, Size: 37, Number: 13319
+. 2025-07-05 09:49:49.698 Tech;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:49.698 File: 'G:\workspace_nodejs\timetango\views\groupid\Tech\menu.ejs' [2025-06-25T11:23:00.671Z] [6326]
+. 2025-07-05 09:49:49.699 Copying "G:\workspace_nodejs\timetango\views\groupid\Tech\menu.ejs" to remote directory started.
+. 2025-07-05 09:49:49.699 Binary transfer mode selected.
+. 2025-07-05 09:49:49.699 Opening remote file.
+> 2025-07-05 09:49:49.699 Type: SSH_FXP_OPEN, Size: 78, Number: 13571
+< 2025-07-05 09:49:49.716 Type: SSH_FXP_HANDLE, Size: 13, Number: 13571
+> 2025-07-05 09:49:49.716 Type: SSH_FXP_WRITE, Size: 6351, Number: 14086
+> 2025-07-05 09:49:49.716 Type: SSH_FXP_CLOSE, Size: 13, Number: 14340
+> 2025-07-05 09:49:49.717 Type: SSH_FXP_SETSTAT, Size: 74, Number: 13833
+< 2025-07-05 09:49:49.733 Type: SSH_FXP_STATUS, Size: 24, Number: 14086
+< 2025-07-05 09:49:49.733 Status code: 0
+< 2025-07-05 09:49:49.734 Type: SSH_FXP_STATUS, Size: 24, Number: 14340
+< 2025-07-05 09:49:49.734 Status code: 0
+. 2025-07-05 09:49:49.734 Preserving timestamp [2025-06-25T11:23:00.000Z]
+< 2025-07-05 09:49:49.748 Type: SSH_FXP_STATUS, Size: 24, Number: 13833
+< 2025-07-05 09:49:49.748 Status code: 0
+. 2025-07-05 09:49:49.748 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Tech\menu.ejs' => '/home/timetango/timetango/views/groupid/Tech/menu.ejs' [6326]
+. 2025-07-05 09:49:49.748 File: 'G:\workspace_nodejs\timetango\views\groupid\Tech\pos.ejs' [2025-06-26T10:55:20.603Z] [3344]
+. 2025-07-05 09:49:49.749 Copying "G:\workspace_nodejs\timetango\views\groupid\Tech\pos.ejs" to remote directory started.
+. 2025-07-05 09:49:49.749 Binary transfer mode selected.
+. 2025-07-05 09:49:49.749 Opening remote file.
+> 2025-07-05 09:49:49.749 Type: SSH_FXP_OPEN, Size: 77, Number: 14595
+< 2025-07-05 09:49:49.762 Type: SSH_FXP_HANDLE, Size: 13, Number: 14595
+> 2025-07-05 09:49:49.762 Type: SSH_FXP_WRITE, Size: 3369, Number: 15110
+> 2025-07-05 09:49:49.763 Type: SSH_FXP_CLOSE, Size: 13, Number: 15364
+> 2025-07-05 09:49:49.763 Type: SSH_FXP_SETSTAT, Size: 73, Number: 14857
+< 2025-07-05 09:49:49.781 Type: SSH_FXP_STATUS, Size: 24, Number: 15110
+< 2025-07-05 09:49:49.781 Status code: 0
+< 2025-07-05 09:49:49.781 Type: SSH_FXP_STATUS, Size: 24, Number: 15364
+< 2025-07-05 09:49:49.781 Status code: 0
+. 2025-07-05 09:49:49.781 Preserving timestamp [2025-06-26T10:55:20.000Z]
+< 2025-07-05 09:49:49.794 Type: SSH_FXP_STATUS, Size: 24, Number: 14857
+< 2025-07-05 09:49:49.795 Status code: 0
+. 2025-07-05 09:49:49.795 Transfer done: 'G:\workspace_nodejs\timetango\views\groupid\Tech\pos.ejs' => '/home/timetango/timetango/views/groupid/Tech/pos.ejs' [3344]
+. 2025-07-05 09:49:49.796 File: 'G:\workspace_nodejs\timetango\views\index.ejs' [2025-06-30T10:04:23.804Z] [10109]
+. 2025-07-05 09:49:49.796 Copying "G:\workspace_nodejs\timetango\views\index.ejs" to remote directory started.
+. 2025-07-05 09:49:49.796 Binary transfer mode selected.
+. 2025-07-05 09:49:49.796 Opening remote file.
+> 2025-07-05 09:49:49.796 Type: SSH_FXP_OPEN, Size: 66, Number: 15619
+< 2025-07-05 09:49:49.812 Type: SSH_FXP_HANDLE, Size: 13, Number: 15619
+> 2025-07-05 09:49:49.812 Type: SSH_FXP_WRITE, Size: 10134, Number: 16134
+> 2025-07-05 09:49:49.813 Type: SSH_FXP_CLOSE, Size: 13, Number: 16388
+> 2025-07-05 09:49:49.813 Type: SSH_FXP_SETSTAT, Size: 62, Number: 15881
+< 2025-07-05 09:49:49.827 Type: SSH_FXP_STATUS, Size: 24, Number: 16134
+< 2025-07-05 09:49:49.827 Status code: 0
+< 2025-07-05 09:49:49.828 Type: SSH_FXP_STATUS, Size: 24, Number: 16388
+< 2025-07-05 09:49:49.828 Status code: 0
+. 2025-07-05 09:49:49.828 Preserving timestamp [2025-06-30T10:04:23.000Z]
+< 2025-07-05 09:49:49.842 Type: SSH_FXP_STATUS, Size: 24, Number: 15881
+< 2025-07-05 09:49:49.842 Status code: 0
+. 2025-07-05 09:49:49.842 Transfer done: 'G:\workspace_nodejs\timetango\views\index.ejs' => '/home/timetango/timetango/views/index.ejs' [10109]
+. 2025-07-05 09:49:49.842 File: 'G:\workspace_nodejs\timetango\views\login.ejs' [2025-06-26T00:28:48.186Z] [11741]
+. 2025-07-05 09:49:49.843 Copying "G:\workspace_nodejs\timetango\views\login.ejs" to remote directory started.
+. 2025-07-05 09:49:49.843 Binary transfer mode selected.
+. 2025-07-05 09:49:49.843 Opening remote file.
+> 2025-07-05 09:49:49.843 Type: SSH_FXP_OPEN, Size: 66, Number: 16643
+< 2025-07-05 09:49:49.859 Type: SSH_FXP_HANDLE, Size: 13, Number: 16643
+> 2025-07-05 09:49:49.859 Type: SSH_FXP_WRITE, Size: 11766, Number: 17158
+> 2025-07-05 09:49:49.860 Type: SSH_FXP_CLOSE, Size: 13, Number: 17412
+> 2025-07-05 09:49:49.860 Type: SSH_FXP_SETSTAT, Size: 62, Number: 16905
+< 2025-07-05 09:49:49.878 Type: SSH_FXP_STATUS, Size: 24, Number: 17158
+< 2025-07-05 09:49:49.878 Status code: 0
+< 2025-07-05 09:49:49.878 Type: SSH_FXP_STATUS, Size: 24, Number: 17412
+< 2025-07-05 09:49:49.878 Status code: 0
+. 2025-07-05 09:49:49.878 Preserving timestamp [2025-06-26T00:28:48.000Z]
+< 2025-07-05 09:49:49.891 Type: SSH_FXP_STATUS, Size: 24, Number: 16905
+< 2025-07-05 09:49:49.891 Status code: 0
+. 2025-07-05 09:49:49.891 Transfer done: 'G:\workspace_nodejs\timetango\views\login.ejs' => '/home/timetango/timetango/views/login.ejs' [11741]
+. 2025-07-05 09:49:49.891 File: 'G:\workspace_nodejs\timetango\views\partial' [2025-06-26T10:27:07.506Z] [0]
+. 2025-07-05 09:49:49.892 Listing file "/home/timetango/timetango/views/partial".
+> 2025-07-05 09:49:49.892 Type: SSH_FXP_LSTAT, Size: 48, Number: 17671
+< 2025-07-05 09:49:49.908 Type: SSH_FXP_ATTRS, Size: 37, Number: 17671
+. 2025-07-05 09:49:49.908 partial;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:49.908 File: 'G:\workspace_nodejs\timetango\views\partial\del_menu.ejs' [2025-06-26T10:26:43.307Z] [765]
+. 2025-07-05 09:49:49.909 Copying "G:\workspace_nodejs\timetango\views\partial\del_menu.ejs" to remote directory started.
+. 2025-07-05 09:49:49.910 Binary transfer mode selected.
+. 2025-07-05 09:49:49.910 Opening remote file.
+> 2025-07-05 09:49:49.910 Type: SSH_FXP_OPEN, Size: 77, Number: 17923
+< 2025-07-05 09:49:49.926 Type: SSH_FXP_HANDLE, Size: 13, Number: 17923
+> 2025-07-05 09:49:49.927 Type: SSH_FXP_WRITE, Size: 790, Number: 18438
+> 2025-07-05 09:49:49.927 Type: SSH_FXP_CLOSE, Size: 13, Number: 18692
+> 2025-07-05 09:49:49.927 Type: SSH_FXP_SETSTAT, Size: 73, Number: 18185
+< 2025-07-05 09:49:49.943 Type: SSH_FXP_STATUS, Size: 24, Number: 18438
+< 2025-07-05 09:49:49.943 Status code: 0
+< 2025-07-05 09:49:49.944 Type: SSH_FXP_STATUS, Size: 24, Number: 18692
+< 2025-07-05 09:49:49.944 Status code: 0
+. 2025-07-05 09:49:49.944 Preserving timestamp [2025-06-26T10:26:43.000Z]
+< 2025-07-05 09:49:49.957 Type: SSH_FXP_STATUS, Size: 24, Number: 18185
+< 2025-07-05 09:49:49.957 Status code: 0
+. 2025-07-05 09:49:49.957 Transfer done: 'G:\workspace_nodejs\timetango\views\partial\del_menu.ejs' => '/home/timetango/timetango/views/partial/del_menu.ejs' [765]
+. 2025-07-05 09:49:49.958 File: 'G:\workspace_nodejs\timetango\views\partial\logo.ejs' [2025-06-26T04:04:47.370Z] [443]
+. 2025-07-05 09:49:49.958 Copying "G:\workspace_nodejs\timetango\views\partial\logo.ejs" to remote directory started.
+. 2025-07-05 09:49:49.958 Binary transfer mode selected.
+. 2025-07-05 09:49:49.958 Opening remote file.
+> 2025-07-05 09:49:49.958 Type: SSH_FXP_OPEN, Size: 73, Number: 18947
+< 2025-07-05 09:49:49.973 Type: SSH_FXP_HANDLE, Size: 13, Number: 18947
+> 2025-07-05 09:49:49.973 Type: SSH_FXP_WRITE, Size: 468, Number: 19462
+> 2025-07-05 09:49:49.974 Type: SSH_FXP_CLOSE, Size: 13, Number: 19716
+> 2025-07-05 09:49:49.974 Type: SSH_FXP_SETSTAT, Size: 69, Number: 19209
+< 2025-07-05 09:49:49.988 Type: SSH_FXP_STATUS, Size: 24, Number: 19462
+< 2025-07-05 09:49:49.988 Status code: 0
+< 2025-07-05 09:49:49.988 Type: SSH_FXP_STATUS, Size: 24, Number: 19716
+< 2025-07-05 09:49:49.988 Status code: 0
+. 2025-07-05 09:49:49.988 Preserving timestamp [2025-06-26T04:04:47.000Z]
+< 2025-07-05 09:49:50.002 Type: SSH_FXP_STATUS, Size: 24, Number: 19209
+< 2025-07-05 09:49:50.002 Status code: 0
+. 2025-07-05 09:49:50.002 Transfer done: 'G:\workspace_nodejs\timetango\views\partial\logo.ejs' => '/home/timetango/timetango/views/partial/logo.ejs' [443]
+. 2025-07-05 09:49:50.002 File: 'G:\workspace_nodejs\timetango\views\partial\profiles.ejs' [2025-06-25T11:07:47.423Z] [777]
+. 2025-07-05 09:49:50.003 Copying "G:\workspace_nodejs\timetango\views\partial\profiles.ejs" to remote directory started.
+. 2025-07-05 09:49:50.003 Binary transfer mode selected.
+. 2025-07-05 09:49:50.003 Opening remote file.
+> 2025-07-05 09:49:50.003 Type: SSH_FXP_OPEN, Size: 77, Number: 19971
+< 2025-07-05 09:49:50.017 Type: SSH_FXP_HANDLE, Size: 13, Number: 19971
+> 2025-07-05 09:49:50.017 Type: SSH_FXP_WRITE, Size: 802, Number: 20486
+> 2025-07-05 09:49:50.018 Type: SSH_FXP_CLOSE, Size: 13, Number: 20740
+> 2025-07-05 09:49:50.018 Type: SSH_FXP_SETSTAT, Size: 73, Number: 20233
+< 2025-07-05 09:49:50.032 Type: SSH_FXP_STATUS, Size: 24, Number: 20486
+< 2025-07-05 09:49:50.032 Status code: 0
+< 2025-07-05 09:49:50.033 Type: SSH_FXP_STATUS, Size: 24, Number: 20740
+< 2025-07-05 09:49:50.033 Status code: 0
+. 2025-07-05 09:49:50.033 Preserving timestamp [2025-06-25T11:07:47.000Z]
+< 2025-07-05 09:49:50.047 Type: SSH_FXP_STATUS, Size: 24, Number: 20233
+< 2025-07-05 09:49:50.047 Status code: 0
+. 2025-07-05 09:49:50.047 Transfer done: 'G:\workspace_nodejs\timetango\views\partial\profiles.ejs' => '/home/timetango/timetango/views/partial/profiles.ejs' [777]
+. 2025-07-05 09:49:50.048 File: 'G:\workspace_nodejs\timetango\views\partial\search.ejs' [2025-06-26T04:04:28.814Z] [693]
+. 2025-07-05 09:49:50.048 Copying "G:\workspace_nodejs\timetango\views\partial\search.ejs" to remote directory started.
+. 2025-07-05 09:49:50.048 Binary transfer mode selected.
+. 2025-07-05 09:49:50.048 Opening remote file.
+> 2025-07-05 09:49:50.048 Type: SSH_FXP_OPEN, Size: 75, Number: 20995
+< 2025-07-05 09:49:50.062 Type: SSH_FXP_HANDLE, Size: 13, Number: 20995
+> 2025-07-05 09:49:50.062 Type: SSH_FXP_WRITE, Size: 718, Number: 21510
+> 2025-07-05 09:49:50.063 Type: SSH_FXP_CLOSE, Size: 13, Number: 21764
+> 2025-07-05 09:49:50.063 Type: SSH_FXP_SETSTAT, Size: 71, Number: 21257
+< 2025-07-05 09:49:50.077 Type: SSH_FXP_STATUS, Size: 24, Number: 21510
+< 2025-07-05 09:49:50.077 Status code: 0
+< 2025-07-05 09:49:50.078 Type: SSH_FXP_STATUS, Size: 24, Number: 21764
+< 2025-07-05 09:49:50.078 Status code: 0
+. 2025-07-05 09:49:50.078 Preserving timestamp [2025-06-26T04:04:28.000Z]
+< 2025-07-05 09:49:50.091 Type: SSH_FXP_STATUS, Size: 24, Number: 21257
+< 2025-07-05 09:49:50.092 Status code: 0
+. 2025-07-05 09:49:50.092 Transfer done: 'G:\workspace_nodejs\timetango\views\partial\search.ejs' => '/home/timetango/timetango/views/partial/search.ejs' [693]
+. 2025-07-05 09:49:50.092 Copying finished: Transferred: 134,038, Elapsed: 0:00:01, CPS: 125,739/s
+> 2025-07-05 09:49:50.092 Script: put G:\workspace_nodejs\timetango\utils /home/timetango/timetango/utils
+. 2025-07-05 09:49:50.093 Copying 1 files/directories to remote directory "/home/timetango/timetango/"
+. 2025-07-05 09:49:50.093   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: utils
+. 2025-07-05 09:49:50.093   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2025-07-05 09:49:50.093   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2025-07-05 09:49:50.094 File: 'G:\workspace_nodejs\timetango\utils' [2025-06-25T06:56:09.351Z] [0]
+. 2025-07-05 09:49:50.094 Listing file "/home/timetango/timetango/utils".
+> 2025-07-05 09:49:50.094 Type: SSH_FXP_LSTAT, Size: 40, Number: 22023
+< 2025-07-05 09:49:50.109 Type: SSH_FXP_ATTRS, Size: 37, Number: 22023
+. 2025-07-05 09:49:50.109 utils;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:50.109 File: 'G:\workspace_nodejs\timetango\utils\actionLog.js' [2025-07-03T08:19:28.532Z] [1165]
+. 2025-07-05 09:49:50.110 Copying "G:\workspace_nodejs\timetango\utils\actionLog.js" to remote directory started.
+. 2025-07-05 09:49:50.110 Binary transfer mode selected.
+. 2025-07-05 09:49:50.110 Opening remote file.
+> 2025-07-05 09:49:50.110 Type: SSH_FXP_OPEN, Size: 69, Number: 22275
+< 2025-07-05 09:49:50.125 Type: SSH_FXP_HANDLE, Size: 13, Number: 22275
+> 2025-07-05 09:49:50.125 Type: SSH_FXP_WRITE, Size: 1190, Number: 22790
+> 2025-07-05 09:49:50.125 Type: SSH_FXP_CLOSE, Size: 13, Number: 23044
+> 2025-07-05 09:49:50.125 Type: SSH_FXP_SETSTAT, Size: 65, Number: 22537
+< 2025-07-05 09:49:50.140 Type: SSH_FXP_STATUS, Size: 24, Number: 22790
+< 2025-07-05 09:49:50.140 Status code: 0
+< 2025-07-05 09:49:50.140 Type: SSH_FXP_STATUS, Size: 24, Number: 23044
+< 2025-07-05 09:49:50.140 Status code: 0
+. 2025-07-05 09:49:50.140 Preserving timestamp [2025-07-03T08:19:28.000Z]
+< 2025-07-05 09:49:50.155 Type: SSH_FXP_STATUS, Size: 24, Number: 22537
+< 2025-07-05 09:49:50.155 Status code: 0
+. 2025-07-05 09:49:50.155 Transfer done: 'G:\workspace_nodejs\timetango\utils\actionLog.js' => '/home/timetango/timetango/utils/actionLog.js' [1165]
+. 2025-07-05 09:49:50.155 File: 'G:\workspace_nodejs\timetango\utils\errorHandler.js' [2025-06-19T01:14:17.184Z] [139]
+. 2025-07-05 09:49:50.155 Copying "G:\workspace_nodejs\timetango\utils\errorHandler.js" to remote directory started.
+. 2025-07-05 09:49:50.155 Binary transfer mode selected.
+. 2025-07-05 09:49:50.155 Opening remote file.
+> 2025-07-05 09:49:50.155 Type: SSH_FXP_OPEN, Size: 72, Number: 23299
+< 2025-07-05 09:49:50.169 Type: SSH_FXP_HANDLE, Size: 13, Number: 23299
+> 2025-07-05 09:49:50.169 Type: SSH_FXP_WRITE, Size: 164, Number: 23814
+> 2025-07-05 09:49:50.170 Type: SSH_FXP_CLOSE, Size: 13, Number: 24068
+> 2025-07-05 09:49:50.170 Type: SSH_FXP_SETSTAT, Size: 68, Number: 23561
+< 2025-07-05 09:49:50.184 Type: SSH_FXP_STATUS, Size: 24, Number: 23814
+< 2025-07-05 09:49:50.184 Status code: 0
+< 2025-07-05 09:49:50.185 Type: SSH_FXP_STATUS, Size: 24, Number: 24068
+< 2025-07-05 09:49:50.185 Status code: 0
+. 2025-07-05 09:49:50.185 Preserving timestamp [2025-06-19T01:14:17.000Z]
+< 2025-07-05 09:49:50.199 Type: SSH_FXP_STATUS, Size: 24, Number: 23561
+< 2025-07-05 09:49:50.199 Status code: 0
+. 2025-07-05 09:49:50.199 Transfer done: 'G:\workspace_nodejs\timetango\utils\errorHandler.js' => '/home/timetango/timetango/utils/errorHandler.js' [139]
+. 2025-07-05 09:49:50.199 File: 'G:\workspace_nodejs\timetango\utils\jwt.js' [2025-06-25T10:24:09.030Z] [612]
+. 2025-07-05 09:49:50.200 Copying "G:\workspace_nodejs\timetango\utils\jwt.js" to remote directory started.
+. 2025-07-05 09:49:50.200 Binary transfer mode selected.
+. 2025-07-05 09:49:50.200 Opening remote file.
+> 2025-07-05 09:49:50.200 Type: SSH_FXP_OPEN, Size: 63, Number: 24323
+< 2025-07-05 09:49:50.217 Type: SSH_FXP_HANDLE, Size: 13, Number: 24323
+> 2025-07-05 09:49:50.217 Type: SSH_FXP_WRITE, Size: 637, Number: 24838
+> 2025-07-05 09:49:50.218 Type: SSH_FXP_CLOSE, Size: 13, Number: 25092
+> 2025-07-05 09:49:50.218 Type: SSH_FXP_SETSTAT, Size: 59, Number: 24585
+< 2025-07-05 09:49:50.232 Type: SSH_FXP_STATUS, Size: 24, Number: 24838
+< 2025-07-05 09:49:50.232 Status code: 0
+< 2025-07-05 09:49:50.232 Type: SSH_FXP_STATUS, Size: 24, Number: 25092
+< 2025-07-05 09:49:50.232 Status code: 0
+. 2025-07-05 09:49:50.232 Preserving timestamp [2025-06-25T10:24:09.000Z]
+< 2025-07-05 09:49:50.247 Type: SSH_FXP_STATUS, Size: 24, Number: 24585
+< 2025-07-05 09:49:50.247 Status code: 0
+. 2025-07-05 09:49:50.247 Transfer done: 'G:\workspace_nodejs\timetango\utils\jwt.js' => '/home/timetango/timetango/utils/jwt.js' [612]
+. 2025-07-05 09:49:50.247 File: 'G:\workspace_nodejs\timetango\utils\logger.js' [2025-06-27T09:53:56.011Z] [1356]
+. 2025-07-05 09:49:50.247 Copying "G:\workspace_nodejs\timetango\utils\logger.js" to remote directory started.
+. 2025-07-05 09:49:50.248 Binary transfer mode selected.
+. 2025-07-05 09:49:50.248 Opening remote file.
+> 2025-07-05 09:49:50.248 Type: SSH_FXP_OPEN, Size: 66, Number: 25347
+< 2025-07-05 09:49:50.264 Type: SSH_FXP_HANDLE, Size: 13, Number: 25347
+> 2025-07-05 09:49:50.264 Type: SSH_FXP_WRITE, Size: 1381, Number: 25862
+> 2025-07-05 09:49:50.265 Type: SSH_FXP_CLOSE, Size: 13, Number: 26116
+> 2025-07-05 09:49:50.265 Type: SSH_FXP_SETSTAT, Size: 62, Number: 25609
+< 2025-07-05 09:49:50.279 Type: SSH_FXP_STATUS, Size: 24, Number: 25862
+< 2025-07-05 09:49:50.279 Status code: 0
+< 2025-07-05 09:49:50.280 Type: SSH_FXP_STATUS, Size: 24, Number: 26116
+< 2025-07-05 09:49:50.280 Status code: 0
+. 2025-07-05 09:49:50.280 Preserving timestamp [2025-06-27T09:53:56.000Z]
+< 2025-07-05 09:49:50.295 Type: SSH_FXP_STATUS, Size: 24, Number: 25609
+< 2025-07-05 09:49:50.295 Status code: 0
+. 2025-07-05 09:49:50.295 Transfer done: 'G:\workspace_nodejs\timetango\utils\logger.js' => '/home/timetango/timetango/utils/logger.js' [1356]
+. 2025-07-05 09:49:50.295 Copying finished: Transferred: 3,272, Elapsed: 0:00:00, CPS: 16,198/s
+> 2025-07-05 09:49:50.295 Script: put G:\workspace_nodejs\timetango\routes /home/timetango/timetango/routes
+. 2025-07-05 09:49:50.296 Copying 1 files/directories to remote directory "/home/timetango/timetango/"
+. 2025-07-05 09:49:50.296   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: routes
+. 2025-07-05 09:49:50.296   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2025-07-05 09:49:50.296   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2025-07-05 09:49:50.296 File: 'G:\workspace_nodejs\timetango\routes' [2025-07-03T08:57:59.246Z] [0]
+. 2025-07-05 09:49:50.297 Listing file "/home/timetango/timetango/routes".
+> 2025-07-05 09:49:50.297 Type: SSH_FXP_LSTAT, Size: 41, Number: 26375
+< 2025-07-05 09:49:50.312 Type: SSH_FXP_ATTRS, Size: 37, Number: 26375
+. 2025-07-05 09:49:50.312 routes;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:50.312 File: 'G:\workspace_nodejs\timetango\routes\eventRoutes.js' [2025-06-25T06:53:57.160Z] [353]
+. 2025-07-05 09:49:50.313 Copying "G:\workspace_nodejs\timetango\routes\eventRoutes.js" to remote directory started.
+. 2025-07-05 09:49:50.313 Binary transfer mode selected.
+. 2025-07-05 09:49:50.313 Opening remote file.
+> 2025-07-05 09:49:50.313 Type: SSH_FXP_OPEN, Size: 72, Number: 26627
+< 2025-07-05 09:49:50.330 Type: SSH_FXP_HANDLE, Size: 13, Number: 26627
+> 2025-07-05 09:49:50.330 Type: SSH_FXP_WRITE, Size: 378, Number: 27142
+> 2025-07-05 09:49:50.331 Type: SSH_FXP_CLOSE, Size: 13, Number: 27396
+> 2025-07-05 09:49:50.331 Type: SSH_FXP_SETSTAT, Size: 68, Number: 26889
+< 2025-07-05 09:49:50.345 Type: SSH_FXP_STATUS, Size: 24, Number: 27142
+< 2025-07-05 09:49:50.345 Status code: 0
+< 2025-07-05 09:49:50.345 Type: SSH_FXP_STATUS, Size: 24, Number: 27396
+< 2025-07-05 09:49:50.345 Status code: 0
+. 2025-07-05 09:49:50.345 Preserving timestamp [2025-06-25T06:53:57.000Z]
+< 2025-07-05 09:49:50.360 Type: SSH_FXP_STATUS, Size: 24, Number: 26889
+< 2025-07-05 09:49:50.360 Status code: 0
+. 2025-07-05 09:49:50.360 Transfer done: 'G:\workspace_nodejs\timetango\routes\eventRoutes.js' => '/home/timetango/timetango/routes/eventRoutes.js' [353]
+. 2025-07-05 09:49:50.360 File: 'G:\workspace_nodejs\timetango\routes\masterRoutes.js' [2025-06-25T06:07:17.049Z] [298]
+. 2025-07-05 09:49:50.361 Copying "G:\workspace_nodejs\timetango\routes\masterRoutes.js" to remote directory started.
+. 2025-07-05 09:49:50.361 Binary transfer mode selected.
+. 2025-07-05 09:49:50.361 Opening remote file.
+> 2025-07-05 09:49:50.361 Type: SSH_FXP_OPEN, Size: 73, Number: 27651
+< 2025-07-05 09:49:50.375 Type: SSH_FXP_HANDLE, Size: 13, Number: 27651
+> 2025-07-05 09:49:50.375 Type: SSH_FXP_WRITE, Size: 323, Number: 28166
+> 2025-07-05 09:49:50.375 Type: SSH_FXP_CLOSE, Size: 13, Number: 28420
+> 2025-07-05 09:49:50.375 Type: SSH_FXP_SETSTAT, Size: 69, Number: 27913
+< 2025-07-05 09:49:50.390 Type: SSH_FXP_STATUS, Size: 24, Number: 28166
+< 2025-07-05 09:49:50.390 Status code: 0
+< 2025-07-05 09:49:50.391 Type: SSH_FXP_STATUS, Size: 24, Number: 28420
+< 2025-07-05 09:49:50.391 Status code: 0
+. 2025-07-05 09:49:50.391 Preserving timestamp [2025-06-25T06:07:17.000Z]
+< 2025-07-05 09:49:50.405 Type: SSH_FXP_STATUS, Size: 24, Number: 27913
+< 2025-07-05 09:49:50.405 Status code: 0
+. 2025-07-05 09:49:50.405 Transfer done: 'G:\workspace_nodejs\timetango\routes\masterRoutes.js' => '/home/timetango/timetango/routes/masterRoutes.js' [298]
+. 2025-07-05 09:49:50.405 File: 'G:\workspace_nodejs\timetango\routes\ownerRoutes.js' [2025-06-27T08:45:09.238Z] [292]
+. 2025-07-05 09:49:50.405 Copying "G:\workspace_nodejs\timetango\routes\ownerRoutes.js" to remote directory started.
+. 2025-07-05 09:49:50.405 Binary transfer mode selected.
+. 2025-07-05 09:49:50.405 Opening remote file.
+> 2025-07-05 09:49:50.405 Type: SSH_FXP_OPEN, Size: 72, Number: 28675
+< 2025-07-05 09:49:50.430 Type: SSH_FXP_HANDLE, Size: 13, Number: 28675
+> 2025-07-05 09:49:50.430 Type: SSH_FXP_WRITE, Size: 317, Number: 29190
+> 2025-07-05 09:49:50.439 Type: SSH_FXP_CLOSE, Size: 13, Number: 29444
+> 2025-07-05 09:49:50.439 Type: SSH_FXP_SETSTAT, Size: 68, Number: 28937
+< 2025-07-05 09:49:50.460 Type: SSH_FXP_STATUS, Size: 24, Number: 29190
+< 2025-07-05 09:49:50.460 Status code: 0
+< 2025-07-05 09:49:50.462 Type: SSH_FXP_STATUS, Size: 24, Number: 29444
+< 2025-07-05 09:49:50.462 Status code: 0
+. 2025-07-05 09:49:50.462 Preserving timestamp [2025-06-27T08:45:09.000Z]
+< 2025-07-05 09:49:50.477 Type: SSH_FXP_STATUS, Size: 24, Number: 28937
+< 2025-07-05 09:49:50.477 Status code: 0
+. 2025-07-05 09:49:50.477 Transfer done: 'G:\workspace_nodejs\timetango\routes\ownerRoutes.js' => '/home/timetango/timetango/routes/ownerRoutes.js' [292]
+. 2025-07-05 09:49:50.477 File: 'G:\workspace_nodejs\timetango\routes\shopRoutes.js' [2025-07-03T09:19:56.838Z] [291]
+. 2025-07-05 09:49:50.477 Copying "G:\workspace_nodejs\timetango\routes\shopRoutes.js" to remote directory started.
+. 2025-07-05 09:49:50.477 Binary transfer mode selected.
+. 2025-07-05 09:49:50.477 Opening remote file.
+> 2025-07-05 09:49:50.477 Type: SSH_FXP_OPEN, Size: 71, Number: 29699
+< 2025-07-05 09:49:50.494 Type: SSH_FXP_HANDLE, Size: 13, Number: 29699
+> 2025-07-05 09:49:50.494 Type: SSH_FXP_WRITE, Size: 316, Number: 30214
+> 2025-07-05 09:49:50.495 Type: SSH_FXP_CLOSE, Size: 13, Number: 30468
+> 2025-07-05 09:49:50.495 Type: SSH_FXP_SETSTAT, Size: 67, Number: 29961
+< 2025-07-05 09:49:50.512 Type: SSH_FXP_STATUS, Size: 24, Number: 30214
+< 2025-07-05 09:49:50.512 Status code: 0
+< 2025-07-05 09:49:50.513 Type: SSH_FXP_STATUS, Size: 24, Number: 30468
+< 2025-07-05 09:49:50.513 Status code: 0
+. 2025-07-05 09:49:50.513 Preserving timestamp [2025-07-03T09:19:56.000Z]
+< 2025-07-05 09:49:50.527 Type: SSH_FXP_STATUS, Size: 24, Number: 29961
+< 2025-07-05 09:49:50.528 Status code: 0
+. 2025-07-05 09:49:50.528 Transfer done: 'G:\workspace_nodejs\timetango\routes\shopRoutes.js' => '/home/timetango/timetango/routes/shopRoutes.js' [291]
+. 2025-07-05 09:49:50.528 File: 'G:\workspace_nodejs\timetango\routes\userRoutes.js' [2025-07-04T06:19:49.492Z] [792]
+. 2025-07-05 09:49:50.528 Copying "G:\workspace_nodejs\timetango\routes\userRoutes.js" to remote directory started.
+. 2025-07-05 09:49:50.528 Binary transfer mode selected.
+. 2025-07-05 09:49:50.529 Opening remote file.
+> 2025-07-05 09:49:50.529 Type: SSH_FXP_OPEN, Size: 71, Number: 30723
+< 2025-07-05 09:49:50.544 Type: SSH_FXP_HANDLE, Size: 13, Number: 30723
+> 2025-07-05 09:49:50.544 Type: SSH_FXP_WRITE, Size: 817, Number: 31238
+> 2025-07-05 09:49:50.545 Type: SSH_FXP_CLOSE, Size: 13, Number: 31492
+> 2025-07-05 09:49:50.545 Type: SSH_FXP_SETSTAT, Size: 67, Number: 30985
+< 2025-07-05 09:49:50.560 Type: SSH_FXP_STATUS, Size: 24, Number: 31238
+< 2025-07-05 09:49:50.560 Status code: 0
+< 2025-07-05 09:49:50.560 Type: SSH_FXP_STATUS, Size: 24, Number: 31492
+< 2025-07-05 09:49:50.560 Status code: 0
+. 2025-07-05 09:49:50.560 Preserving timestamp [2025-07-04T06:19:49.000Z]
+< 2025-07-05 09:49:50.574 Type: SSH_FXP_STATUS, Size: 24, Number: 30985
+< 2025-07-05 09:49:50.574 Status code: 0
+. 2025-07-05 09:49:50.574 Transfer done: 'G:\workspace_nodejs\timetango\routes\userRoutes.js' => '/home/timetango/timetango/routes/userRoutes.js' [792]
+. 2025-07-05 09:49:50.575 Copying finished: Transferred: 2,026, Elapsed: 0:00:00, CPS: 7,261/s
+> 2025-07-05 09:49:50.575 Script: put G:\workspace_nodejs\timetango\controllers /home/timetango/timetango/controllers
+. 2025-07-05 09:49:50.576 Copying 1 files/directories to remote directory "/home/timetango/timetango/"
+. 2025-07-05 09:49:50.576   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: controllers
+. 2025-07-05 09:49:50.576   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2025-07-05 09:49:50.576   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2025-07-05 09:49:50.576 File: 'G:\workspace_nodejs\timetango\controllers' [2025-07-03T08:55:30.285Z] [0]
+. 2025-07-05 09:49:50.577 Listing file "/home/timetango/timetango/controllers".
+> 2025-07-05 09:49:50.577 Type: SSH_FXP_LSTAT, Size: 46, Number: 31751
+< 2025-07-05 09:49:50.593 Type: SSH_FXP_ATTRS, Size: 37, Number: 31751
+. 2025-07-05 09:49:50.593 controllers;D;0;2025-07-04T14:19:57.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:50.593 File: 'G:\workspace_nodejs\timetango\controllers\eventController.js' [2025-06-26T02:35:38.830Z] [1787]
+. 2025-07-05 09:49:50.594 Copying "G:\workspace_nodejs\timetango\controllers\eventController.js" to remote directory started.
+. 2025-07-05 09:49:50.594 Binary transfer mode selected.
+. 2025-07-05 09:49:50.594 Opening remote file.
+> 2025-07-05 09:49:50.594 Type: SSH_FXP_OPEN, Size: 81, Number: 32003
+< 2025-07-05 09:49:50.610 Type: SSH_FXP_HANDLE, Size: 13, Number: 32003
+> 2025-07-05 09:49:50.610 Type: SSH_FXP_WRITE, Size: 1812, Number: 32518
+> 2025-07-05 09:49:50.611 Type: SSH_FXP_CLOSE, Size: 13, Number: 32772
+> 2025-07-05 09:49:50.611 Type: SSH_FXP_SETSTAT, Size: 77, Number: 32265
+< 2025-07-05 09:49:50.629 Type: SSH_FXP_STATUS, Size: 24, Number: 32518
+< 2025-07-05 09:49:50.629 Status code: 0
+< 2025-07-05 09:49:50.629 Type: SSH_FXP_STATUS, Size: 24, Number: 32772
+< 2025-07-05 09:49:50.629 Status code: 0
+. 2025-07-05 09:49:50.629 Preserving timestamp [2025-06-26T02:35:38.000Z]
+< 2025-07-05 09:49:50.643 Type: SSH_FXP_STATUS, Size: 24, Number: 32265
+< 2025-07-05 09:49:50.643 Status code: 0
+. 2025-07-05 09:49:50.643 Transfer done: 'G:\workspace_nodejs\timetango\controllers\eventController.js' => '/home/timetango/timetango/controllers/eventController.js' [1787]
+. 2025-07-05 09:49:50.643 File: 'G:\workspace_nodejs\timetango\controllers\masterController.js' [2025-06-25T10:29:22.338Z] [1788]
+. 2025-07-05 09:49:50.644 Copying "G:\workspace_nodejs\timetango\controllers\masterController.js" to remote directory started.
+. 2025-07-05 09:49:50.644 Binary transfer mode selected.
+. 2025-07-05 09:49:50.644 Opening remote file.
+> 2025-07-05 09:49:50.644 Type: SSH_FXP_OPEN, Size: 82, Number: 33027
+< 2025-07-05 09:49:50.658 Type: SSH_FXP_HANDLE, Size: 13, Number: 33027
+> 2025-07-05 09:49:50.658 Type: SSH_FXP_WRITE, Size: 1813, Number: 33542
+> 2025-07-05 09:49:50.659 Type: SSH_FXP_CLOSE, Size: 13, Number: 33796
+> 2025-07-05 09:49:50.659 Type: SSH_FXP_SETSTAT, Size: 78, Number: 33289
+< 2025-07-05 09:49:50.673 Type: SSH_FXP_STATUS, Size: 24, Number: 33542
+< 2025-07-05 09:49:50.673 Status code: 0
+< 2025-07-05 09:49:50.673 Type: SSH_FXP_STATUS, Size: 24, Number: 33796
+< 2025-07-05 09:49:50.674 Status code: 0
+. 2025-07-05 09:49:50.674 Preserving timestamp [2025-06-25T10:29:22.000Z]
+< 2025-07-05 09:49:50.688 Type: SSH_FXP_STATUS, Size: 24, Number: 33289
+< 2025-07-05 09:49:50.688 Status code: 0
+. 2025-07-05 09:49:50.688 Transfer done: 'G:\workspace_nodejs\timetango\controllers\masterController.js' => '/home/timetango/timetango/controllers/masterController.js' [1788]
+. 2025-07-05 09:49:50.689 File: 'G:\workspace_nodejs\timetango\controllers\shopController.js' [2025-07-04T03:10:25.515Z] [4398]
+. 2025-07-05 09:49:50.689 Copying "G:\workspace_nodejs\timetango\controllers\shopController.js" to remote directory started.
+. 2025-07-05 09:49:50.689 Binary transfer mode selected.
+. 2025-07-05 09:49:50.689 Opening remote file.
+> 2025-07-05 09:49:50.689 Type: SSH_FXP_OPEN, Size: 80, Number: 34051
+< 2025-07-05 09:49:50.706 Type: SSH_FXP_HANDLE, Size: 13, Number: 34051
+> 2025-07-05 09:49:50.706 Type: SSH_FXP_WRITE, Size: 4423, Number: 34566
+> 2025-07-05 09:49:50.706 Type: SSH_FXP_CLOSE, Size: 13, Number: 34820
+> 2025-07-05 09:49:50.706 Type: SSH_FXP_SETSTAT, Size: 76, Number: 34313
+< 2025-07-05 09:49:50.720 Type: SSH_FXP_STATUS, Size: 24, Number: 34566
+< 2025-07-05 09:49:50.720 Status code: 0
+< 2025-07-05 09:49:50.721 Type: SSH_FXP_STATUS, Size: 24, Number: 34820
+< 2025-07-05 09:49:50.721 Status code: 0
+. 2025-07-05 09:49:50.721 Preserving timestamp [2025-07-04T03:10:25.000Z]
+< 2025-07-05 09:49:50.736 Type: SSH_FXP_STATUS, Size: 24, Number: 34313
+< 2025-07-05 09:49:50.736 Status code: 0
+. 2025-07-05 09:49:50.736 Transfer done: 'G:\workspace_nodejs\timetango\controllers\shopController.js' => '/home/timetango/timetango/controllers/shopController.js' [4398]
+. 2025-07-05 09:49:50.736 File: 'G:\workspace_nodejs\timetango\controllers\userController.js' [2025-07-04T06:37:10.127Z] [13073]
+. 2025-07-05 09:49:50.736 Copying "G:\workspace_nodejs\timetango\controllers\userController.js" to remote directory started.
+. 2025-07-05 09:49:50.736 Binary transfer mode selected.
+. 2025-07-05 09:49:50.736 Opening remote file.
+> 2025-07-05 09:49:50.736 Type: SSH_FXP_OPEN, Size: 80, Number: 35075
+< 2025-07-05 09:49:50.750 Type: SSH_FXP_HANDLE, Size: 13, Number: 35075
+> 2025-07-05 09:49:50.750 Type: SSH_FXP_WRITE, Size: 13098, Number: 35590
+> 2025-07-05 09:49:50.751 Type: SSH_FXP_CLOSE, Size: 13, Number: 35844
+> 2025-07-05 09:49:50.751 Type: SSH_FXP_SETSTAT, Size: 76, Number: 35337
+< 2025-07-05 09:49:50.766 Type: SSH_FXP_STATUS, Size: 24, Number: 35590
+< 2025-07-05 09:49:50.766 Status code: 0
+< 2025-07-05 09:49:50.767 Type: SSH_FXP_STATUS, Size: 24, Number: 35844
+< 2025-07-05 09:49:50.767 Status code: 0
+. 2025-07-05 09:49:50.767 Preserving timestamp [2025-07-04T06:37:10.000Z]
+< 2025-07-05 09:49:50.779 Type: SSH_FXP_STATUS, Size: 24, Number: 35337
+< 2025-07-05 09:49:50.779 Status code: 0
+. 2025-07-05 09:49:50.779 Transfer done: 'G:\workspace_nodejs\timetango\controllers\userController.js' => '/home/timetango/timetango/controllers/userController.js' [13073]
+. 2025-07-05 09:49:50.780 Copying finished: Transferred: 21,046, Elapsed: 0:00:00, CPS: 103,166/s
+> 2025-07-05 09:49:50.780 Script: put G:\workspace_nodejs\timetango\middleware /home/timetango/timetango/middleware
+. 2025-07-05 09:49:50.781 Copying 1 files/directories to remote directory "/home/timetango/timetango/"
+. 2025-07-05 09:49:50.781   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: middleware
+. 2025-07-05 09:49:50.781   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2025-07-05 09:49:50.781   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2025-07-05 09:49:50.781 File: 'G:\workspace_nodejs\timetango\middleware' [2025-06-25T01:04:49.397Z] [0]
+. 2025-07-05 09:49:50.782 Listing file "/home/timetango/timetango/middleware".
+> 2025-07-05 09:49:50.782 Type: SSH_FXP_LSTAT, Size: 45, Number: 36103
+< 2025-07-05 09:49:50.797 Type: SSH_FXP_ATTRS, Size: 37, Number: 36103
+. 2025-07-05 09:49:50.797 middleware;D;0;2025-07-04T14:19:58.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:50.797 File: 'G:\workspace_nodejs\timetango\middleware\auth.js' [2025-07-03T08:20:25.190Z] [1212]
+. 2025-07-05 09:49:50.798 Copying "G:\workspace_nodejs\timetango\middleware\auth.js" to remote directory started.
+. 2025-07-05 09:49:50.798 Binary transfer mode selected.
+. 2025-07-05 09:49:50.798 Opening remote file.
+> 2025-07-05 09:49:50.798 Type: SSH_FXP_OPEN, Size: 69, Number: 36355
+< 2025-07-05 09:49:50.814 Type: SSH_FXP_HANDLE, Size: 13, Number: 36355
+> 2025-07-05 09:49:50.814 Type: SSH_FXP_WRITE, Size: 1237, Number: 36870
+> 2025-07-05 09:49:50.816 Type: SSH_FXP_CLOSE, Size: 13, Number: 37124
+> 2025-07-05 09:49:50.816 Type: SSH_FXP_SETSTAT, Size: 65, Number: 36617
+< 2025-07-05 09:49:50.832 Type: SSH_FXP_STATUS, Size: 24, Number: 36870
+< 2025-07-05 09:49:50.832 Status code: 0
+< 2025-07-05 09:49:50.832 Type: SSH_FXP_STATUS, Size: 24, Number: 37124
+< 2025-07-05 09:49:50.832 Status code: 0
+. 2025-07-05 09:49:50.832 Preserving timestamp [2025-07-03T08:20:25.000Z]
+< 2025-07-05 09:49:50.847 Type: SSH_FXP_STATUS, Size: 24, Number: 36617
+< 2025-07-05 09:49:50.847 Status code: 0
+. 2025-07-05 09:49:50.847 Transfer done: 'G:\workspace_nodejs\timetango\middleware\auth.js' => '/home/timetango/timetango/middleware/auth.js' [1212]
+. 2025-07-05 09:49:50.847 File: 'G:\workspace_nodejs\timetango\middleware\requestLogger.js' [2025-06-26T09:44:26.329Z] [145]
+. 2025-07-05 09:49:50.848 Copying "G:\workspace_nodejs\timetango\middleware\requestLogger.js" to remote directory started.
+. 2025-07-05 09:49:50.848 Binary transfer mode selected.
+. 2025-07-05 09:49:50.848 Opening remote file.
+> 2025-07-05 09:49:50.848 Type: SSH_FXP_OPEN, Size: 78, Number: 37379
+< 2025-07-05 09:49:50.863 Type: SSH_FXP_HANDLE, Size: 13, Number: 37379
+> 2025-07-05 09:49:50.863 Type: SSH_FXP_WRITE, Size: 170, Number: 37894
+> 2025-07-05 09:49:50.864 Type: SSH_FXP_CLOSE, Size: 13, Number: 38148
+> 2025-07-05 09:49:50.864 Type: SSH_FXP_SETSTAT, Size: 74, Number: 37641
+< 2025-07-05 09:49:50.880 Type: SSH_FXP_STATUS, Size: 24, Number: 37894
+< 2025-07-05 09:49:50.880 Status code: 0
+< 2025-07-05 09:49:50.881 Type: SSH_FXP_STATUS, Size: 24, Number: 38148
+< 2025-07-05 09:49:50.881 Status code: 0
+. 2025-07-05 09:49:50.881 Preserving timestamp [2025-06-26T09:44:26.000Z]
+< 2025-07-05 09:49:50.894 Type: SSH_FXP_STATUS, Size: 24, Number: 37641
+< 2025-07-05 09:49:50.894 Status code: 0
+. 2025-07-05 09:49:50.894 Transfer done: 'G:\workspace_nodejs\timetango\middleware\requestLogger.js' => '/home/timetango/timetango/middleware/requestLogger.js' [145]
+. 2025-07-05 09:49:50.895 Copying finished: Transferred: 1,357, Elapsed: 0:00:00, CPS: 11,903/s
+> 2025-07-05 09:49:50.895 Script: put G:\workspace_nodejs\timetango\models /home/timetango/timetango/models
+. 2025-07-05 09:49:50.896 Copying 1 files/directories to remote directory "/home/timetango/timetango/"
+. 2025-07-05 09:49:50.896   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: models
+. 2025-07-05 09:49:50.896   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2025-07-05 09:49:50.896   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2025-07-05 09:49:50.896 File: 'G:\workspace_nodejs\timetango\models' [2025-07-03T08:53:32.722Z] [0]
+. 2025-07-05 09:49:50.897 Listing file "/home/timetango/timetango/models".
+> 2025-07-05 09:49:50.897 Type: SSH_FXP_LSTAT, Size: 41, Number: 38407
+< 2025-07-05 09:49:50.912 Type: SSH_FXP_ATTRS, Size: 37, Number: 38407
+. 2025-07-05 09:49:50.912 models;D;0;2025-07-04T14:19:58.000Z;4;"" [0];"" [0];rwxr-xr-x;0
+. 2025-07-05 09:49:50.913 File: 'G:\workspace_nodejs\timetango\models\Event.js' [2025-06-25T06:52:51.017Z] [952]
+. 2025-07-05 09:49:50.913 Copying "G:\workspace_nodejs\timetango\models\Event.js" to remote directory started.
+. 2025-07-05 09:49:50.914 Binary transfer mode selected.
+. 2025-07-05 09:49:50.914 Opening remote file.
+> 2025-07-05 09:49:50.914 Type: SSH_FXP_OPEN, Size: 66, Number: 38659
+< 2025-07-05 09:49:50.930 Type: SSH_FXP_HANDLE, Size: 13, Number: 38659
+> 2025-07-05 09:49:50.930 Type: SSH_FXP_WRITE, Size: 977, Number: 39174
+> 2025-07-05 09:49:50.931 Type: SSH_FXP_CLOSE, Size: 13, Number: 39428
+> 2025-07-05 09:49:50.931 Type: SSH_FXP_SETSTAT, Size: 62, Number: 38921
+< 2025-07-05 09:49:50.948 Type: SSH_FXP_STATUS, Size: 24, Number: 39174
+< 2025-07-05 09:49:50.948 Status code: 0
+< 2025-07-05 09:49:50.948 Type: SSH_FXP_STATUS, Size: 24, Number: 39428
+< 2025-07-05 09:49:50.948 Status code: 0
+. 2025-07-05 09:49:50.948 Preserving timestamp [2025-06-25T06:52:51.000Z]
+< 2025-07-05 09:49:50.963 Type: SSH_FXP_STATUS, Size: 24, Number: 38921
+< 2025-07-05 09:49:50.963 Status code: 0
+. 2025-07-05 09:49:50.963 Transfer done: 'G:\workspace_nodejs\timetango\models\Event.js' => '/home/timetango/timetango/models/Event.js' [952]
+. 2025-07-05 09:49:50.964 File: 'G:\workspace_nodejs\timetango\models\Owner.js' [2025-06-27T08:43:33.315Z] [421]
+. 2025-07-05 09:49:50.964 Copying "G:\workspace_nodejs\timetango\models\Owner.js" to remote directory started.
+. 2025-07-05 09:49:50.964 Binary transfer mode selected.
+. 2025-07-05 09:49:50.964 Opening remote file.
+> 2025-07-05 09:49:50.964 Type: SSH_FXP_OPEN, Size: 66, Number: 39683
+< 2025-07-05 09:49:50.980 Type: SSH_FXP_HANDLE, Size: 13, Number: 39683
+> 2025-07-05 09:49:50.980 Type: SSH_FXP_WRITE, Size: 446, Number: 40198
+> 2025-07-05 09:49:50.981 Type: SSH_FXP_CLOSE, Size: 13, Number: 40452
+> 2025-07-05 09:49:50.981 Type: SSH_FXP_SETSTAT, Size: 62, Number: 39945
+< 2025-07-05 09:49:50.996 Type: SSH_FXP_STATUS, Size: 24, Number: 40198
+< 2025-07-05 09:49:50.996 Status code: 0
+< 2025-07-05 09:49:50.996 Type: SSH_FXP_STATUS, Size: 24, Number: 40452
+< 2025-07-05 09:49:50.996 Status code: 0
+. 2025-07-05 09:49:50.996 Preserving timestamp [2025-06-27T08:43:33.000Z]
+< 2025-07-05 09:49:51.010 Type: SSH_FXP_STATUS, Size: 24, Number: 39945
+< 2025-07-05 09:49:51.010 Status code: 0
+. 2025-07-05 09:49:51.010 Transfer done: 'G:\workspace_nodejs\timetango\models\Owner.js' => '/home/timetango/timetango/models/Owner.js' [421]
+. 2025-07-05 09:49:51.011 File: 'G:\workspace_nodejs\timetango\models\Product.js' [2025-06-25T06:52:41.821Z] [949]
+. 2025-07-05 09:49:51.011 Copying "G:\workspace_nodejs\timetango\models\Product.js" to remote directory started.
+. 2025-07-05 09:49:51.011 Binary transfer mode selected.
+. 2025-07-05 09:49:51.011 Opening remote file.
+> 2025-07-05 09:49:51.011 Type: SSH_FXP_OPEN, Size: 68, Number: 40707
+< 2025-07-05 09:49:51.028 Type: SSH_FXP_HANDLE, Size: 13, Number: 40707
+> 2025-07-05 09:49:51.029 Type: SSH_FXP_WRITE, Size: 974, Number: 41222
+> 2025-07-05 09:49:51.029 Type: SSH_FXP_CLOSE, Size: 13, Number: 41476
+> 2025-07-05 09:49:51.029 Type: SSH_FXP_SETSTAT, Size: 64, Number: 40969
+< 2025-07-05 09:49:51.046 Type: SSH_FXP_STATUS, Size: 24, Number: 41222
+< 2025-07-05 09:49:51.046 Status code: 0
+< 2025-07-05 09:49:51.047 Type: SSH_FXP_STATUS, Size: 24, Number: 41476
+< 2025-07-05 09:49:51.047 Status code: 0
+. 2025-07-05 09:49:51.047 Preserving timestamp [2025-06-25T06:52:41.000Z]
+< 2025-07-05 09:49:51.061 Type: SSH_FXP_STATUS, Size: 24, Number: 40969
+< 2025-07-05 09:49:51.061 Status code: 0
+. 2025-07-05 09:49:51.061 Transfer done: 'G:\workspace_nodejs\timetango\models\Product.js' => '/home/timetango/timetango/models/Product.js' [949]
+. 2025-07-05 09:49:51.062 File: 'G:\workspace_nodejs\timetango\models\Shop.js' [2025-07-03T08:56:06.340Z] [632]
+. 2025-07-05 09:49:51.062 Copying "G:\workspace_nodejs\timetango\models\Shop.js" to remote directory started.
+. 2025-07-05 09:49:51.062 Binary transfer mode selected.
+. 2025-07-05 09:49:51.062 Opening remote file.
+> 2025-07-05 09:49:51.062 Type: SSH_FXP_OPEN, Size: 65, Number: 41731
+< 2025-07-05 09:49:51.079 Type: SSH_FXP_HANDLE, Size: 13, Number: 41731
+> 2025-07-05 09:49:51.079 Type: SSH_FXP_WRITE, Size: 657, Number: 42246
+> 2025-07-05 09:49:51.079 Type: SSH_FXP_CLOSE, Size: 13, Number: 42500
+> 2025-07-05 09:49:51.079 Type: SSH_FXP_SETSTAT, Size: 61, Number: 41993
+< 2025-07-05 09:49:51.097 Type: SSH_FXP_STATUS, Size: 24, Number: 42246
+< 2025-07-05 09:49:51.097 Status code: 0
+< 2025-07-05 09:49:51.097 Type: SSH_FXP_STATUS, Size: 24, Number: 42500
+< 2025-07-05 09:49:51.097 Status code: 0
+. 2025-07-05 09:49:51.097 Preserving timestamp [2025-07-03T08:56:06.000Z]
+< 2025-07-05 09:49:51.112 Type: SSH_FXP_STATUS, Size: 24, Number: 41993
+< 2025-07-05 09:49:51.112 Status code: 0
+. 2025-07-05 09:49:51.112 Transfer done: 'G:\workspace_nodejs\timetango\models\Shop.js' => '/home/timetango/timetango/models/Shop.js' [632]
+. 2025-07-05 09:49:51.112 File: 'G:\workspace_nodejs\timetango\models\User.js' [2025-07-01T04:25:07.369Z] [1727]
+. 2025-07-05 09:49:51.113 Copying "G:\workspace_nodejs\timetango\models\User.js" to remote directory started.
+. 2025-07-05 09:49:51.113 Binary transfer mode selected.
+. 2025-07-05 09:49:51.113 Opening remote file.
+> 2025-07-05 09:49:51.113 Type: SSH_FXP_OPEN, Size: 65, Number: 42755
+< 2025-07-05 09:49:51.129 Type: SSH_FXP_HANDLE, Size: 13, Number: 42755
+> 2025-07-05 09:49:51.129 Type: SSH_FXP_WRITE, Size: 1752, Number: 43270
+> 2025-07-05 09:49:51.130 Type: SSH_FXP_CLOSE, Size: 13, Number: 43524
+> 2025-07-05 09:49:51.130 Type: SSH_FXP_SETSTAT, Size: 61, Number: 43017
+< 2025-07-05 09:49:51.147 Type: SSH_FXP_STATUS, Size: 24, Number: 43270
+< 2025-07-05 09:49:51.147 Status code: 0
+< 2025-07-05 09:49:51.148 Type: SSH_FXP_STATUS, Size: 24, Number: 43524
+< 2025-07-05 09:49:51.148 Status code: 0
+. 2025-07-05 09:49:51.148 Preserving timestamp [2025-07-01T04:25:07.000Z]
+< 2025-07-05 09:49:51.162 Type: SSH_FXP_STATUS, Size: 24, Number: 43017
+< 2025-07-05 09:49:51.163 Status code: 0
+. 2025-07-05 09:49:51.163 Transfer done: 'G:\workspace_nodejs\timetango\models\User.js' => '/home/timetango/timetango/models/User.js' [1727]
+. 2025-07-05 09:49:51.163 Copying finished: Transferred: 4,681, Elapsed: 0:00:00, CPS: 17,531/s
+> 2025-07-05 09:49:51.164 Script: exit
+. 2025-07-05 09:49:51.164 Script: Exit code: 0
+. 2025-07-05 09:49:51.164 Closing connection.
+. 2025-07-05 09:49:51.164 Sending special code: 1
+. 2025-07-05 09:49:51.180 Session sent command exit status 0
+. 2025-07-05 09:49:51.180 Main session channel closed
+. 2025-07-05 09:49:51.181 All channels closed

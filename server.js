@@ -6,7 +6,7 @@ require('dotenv').config();
 const userRoutes = require('./routes/userRoutes');
 const masterRoutes = require('./routes/masterRoutes');
 const eventRoutes = require('./routes/eventRoutes');
-const ownerRoutes = require('./routes/ownerRoutes');
+const shopRoutes = require('./routes/shopRoutes');
 const errorHandler = require('./utils/errorHandler');
 const requestLogger = require('./middleware/requestLogger');
 const auth = require('./middleware/auth');
@@ -46,7 +46,7 @@ app.get('/home{/:groupid}{/:func}', (req, res) => {
 app.use('/api', masterRoutes);
 app.use('/api', userRoutes);
 app.use('/api', eventRoutes);
-app.use('/api', ownerRoutes);
+app.use('/api', shopRoutes);
 app.use(requestLogger);
 app.use(errorHandler);
 

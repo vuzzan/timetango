@@ -571,7 +571,8 @@ function findClosetTdElement(scrollParent, myElelemt){
 
 function drawUserProfile(user){
     // Avatar
-    $("#id_profile").find("img").attr("src", "/Template/files/assets/images/avatar-"+user.id+".jpg");
+    $("#id_profile").find("img").attr("src", "/Template/files/assets/images/avatar-"+((user.id % 7)+1)+".jpg");
+    $("#id_profile").find("img").attr("alt", user.name );
     // Name
     $("#id_profile").find("span").html(user.name);
 }
@@ -601,10 +602,11 @@ function jQFormSerializeArrToJson(formSerializeArr){
 
  return jsonObj;
 }
-function queryAjax(ax, successFunc){
+
+function queryAjax(ax, successFunc, errFunc){
     //console.log("Call queryAjax");
     console.log( ax );
-    console.log("Call queryAjax");
+    console.log("Call queryAjax server_host="+server_host);
     $.ajax({
         url: server_host + ax.url,
         type: ax.type?ax.type:"get",
@@ -619,6 +621,9 @@ function queryAjax(ax, successFunc){
             Authorization: "Bearer "+ localStorage.getItem('token'),
         },
         error: function (xhr) {
+            if(errFunc){
+                errFunc(xhr);
+            }
             const error = xhr.responseJSON ? xhr.responseJSON.message : 'Error';
             if (xhr.status === 401) {
                 localStorage.removeItem('token');
@@ -628,4 +633,24 @@ function queryAjax(ax, successFunc){
         
     });
 }
-// 
+
+// function serializeForm($form){
+//     return _.object(_.map($form.serializeArray(), function(item){return [item.name, item.value]; }));
+// }
+
+$.fn.serializeObject = function() {
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name]) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
+//
